@@ -1,0 +1,62 @@
+package com.recklesscoding.abode.core.plan.planelements;
+
+/**
+ * Created by Andreas on 28/12/2015.
+ */
+public class PlanElement {
+
+    private static int ID = 0;
+
+    private String nameOfElement;
+
+    private boolean enabled = true;
+
+    private int usageCounter = 0;
+
+    private boolean isUsed = false;
+
+    public PlanElement(String nameOfElement) {
+        this.nameOfElement = nameOfElement;
+        ID++;
+    }
+
+    public synchronized void setToUpdate()
+    {
+        isUsed = true;
+        increaseUsageCounter();
+    }
+
+    public synchronized void setFinishUpdate( )
+    {
+        this.isUsed = false;
+    }
+
+    public int getID() {
+        return ID;
+    }
+
+    public String getNameOfElement() {
+        return nameOfElement;
+    }
+
+    public void setNameOfElement(String nameOfElement) {
+        this.nameOfElement = nameOfElement;
+    }
+
+    @Override
+    public String toString() {
+        return getNameOfElement();
+    }
+
+    public int getUsageCounter() {
+        return usageCounter;
+    }
+
+    private void increaseUsageCounter() {
+        this.usageCounter++;
+    }
+
+    public boolean getIsUsed() {
+        return isUsed;
+    }
+}

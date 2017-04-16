@@ -1,0 +1,200 @@
+(
+	(documentation )
+	(AP build-pool-ap (seconds 10.0) (build_spawning_pool))
+	(AP attack-enemy (minutes 1.0) (attack))
+	(AP build-hydralisk-den-ap (minutes 1.0) (build_hydralisk_den))
+	(AP build-macro-hatchery-ap (seconds 1.0) (build_macro_hatchery))
+	(AP set-to-defend (seconds 1.0) (defend))
+	(AP spawn-zerglings-ap (seconds 1.0) (spawn_zerglings))
+	(AP spawn-3-overlords-ap (seconds 1.0) (spawn_overlord spawn_overlord spawn_overlord spawn_overlord spawn_overlord spawn_overlord spawn_overlord spawn_overlord spawn_overlord))
+	(AP spawn-2-overlords-ap (seconds 1.0) (spawn_overlord spawn_overlord spawn_overlord spawn_overlord))
+	(C drone-production-competence (minutes 10.0) (goal ((game_over )))
+		(elements 
+			(
+				(try-spawn-drone (trigger ((drone_count 25 <)(mineral_count 50 >=)(larvae_count 0 >)(predicted_supply_available 2 >))) spawn_drone -1)
+			)
+		)
+	)
+	(C build-overlords-competence (minutes 1.0) (goal ((goal ((supply_available 4)))
+		(elements 
+			(
+				(build-lots-overlord (trigger ((mineral_count 300 >)(larvae_count 3 >=))) spawn-3-overlords-ap -1)
+			)
+			(
+				(build-two-overlords (trigger ((mineral_count 200 >)(larvae_count 2 >=))) spawn-2-overlords-ap -1)
+			)
+			(
+				(building_overlords (trigger ((mineral_count 100 >=)(larvae_count 0 >)(overlords_morphing 1 <))) spawn_overlord -1)
+			)
+		)
+	)
+	(C build-pool-competence (seconds 10.0) (goal ((has_spawning_pool )))
+		(elements 
+			(
+				(build-spawning-pool (trigger ((mineral_count 200 >))) build-pool-ap -1)
+			)
+		)
+	)
+	(C build-forces-competence (seconds 1.0) (goal ((game_over )))
+		(elements 
+			(
+				(try-spawn-mutalisks (trigger ((has_completed_spire )(mineral_count 200 >=)(gas_count 200 >=)(supply_available 4 >=))) spawn_mutalisk -1)
+			)
+			(
+				(try-spawn-hydralisks (trigger ((has_completed_hydralisk_den )(mineral_count 75 >=)(gas_count 25 >=)(supply_available 2 >=))) spawn_hydralisk -1)
+			)
+		)
+	)
+	(C scouting-competence (seconds 1.0) (goal ((found_enemy_base )))
+		(elements 
+			(
+				(scout-drone (trigger ((has_spawning_pool )(scouting_drone 0 =))) scout_drone -1)
+			)
+		)
+	)
+	(C collect-gas-competence (seconds 1.0) (goal ((gas_saturated )))
+		(elements 
+			(
+				(put-workers-on-gas (trigger ((all_extractors_completed )(gas_saturated 0 =)(has_extractor ))) start_collecting_gas -1)
+			)
+			(
+				(build-extractor (trigger ((has_extractor_saturation 0 =)(mineral_count 25 >=)(has_extractor 0 =))) build_extractor 1)
+			)
+		)
+	)
+	(C build-hydralisk-den-competence (seconds 10.0) (goal ((has_hydralisk_den )))
+		(elements 
+			(
+				(build-hydralisk-den (trigger ((has_completed_spawning_pool )(mineral_count 100 >=)(gas_count 50 >=))) build-hydralisk-den-ap -1)
+			)
+		)
+	)
+	(C zergling-upgrades (seconds 1.0) (goal ((has_zergling_speed )))
+		(elements 
+			(
+				(research-zergling-speed (trigger ((has_completed_spawning_pool )(has_zergling_speed 0 =))) upgrade_zergling_speed -1)
+			)
+		)
+	)
+	(C hydralisk-upgrades (seconds 1.0) (goal ((has_hydralisk_speed )(has_hydralisk_range )))
+		(elements 
+			(
+				(research-hydralisk-speed (trigger ((has_completed_hydralisk_den )(has_hydralisk_speed 0 =))) upgrade_hydralisk_speed -1)
+			)
+			(
+				(research-hydralisk-range (trigger ((has_completed_hydralisk_den )(has_hydralisk_range 0 =))) upgrade_hydralisk_range -1)
+			)
+		)
+	)
+	(C send-drone-to-expansion (minutes 1.0) (goal ((goal ((check_drone_ready_expand 1)))
+		(elements 
+			(
+				(send-drone (trigger (( ))) send_drone_expansion -1)
+			)
+		)
+	)
+	(C build-defences-competence (seconds 1.0) (goal ((game_over )))
+		(elements 
+			(
+				(upgrade-sunkens (trigger ((mineral_count 50 >=)(creep_colony_count 0 >))) upgrade_to_sunken -1)
+			)
+			(
+				(build-creep-colony (trigger ((mineral_count 75 >=))) build_creep_colony -1)
+			)
+		)
+	)
+	(C hatchery-upgrade-competence (seconds 1.0) (goal ((has_lair )))
+		(elements 
+			(
+				(upgrade-hatchery-to-lair (trigger ((mineral_count 150 >=)(gas_count 100 >=))) upgrade_to_lair -1)
+			)
+		)
+	)
+	(C build-spire-competence (seconds 1.0) (goal ((has_spire )))
+		(elements 
+			(
+				(build-spire (trigger ((has_completed_lair )(mineral_count 200 >=)(gas_count 200 >=))) build_spire -1)
+			)
+		)
+	)
+	(C build-expansion-competence (seconds 1.0) (goal ((game_over )))
+		(elements 
+			(
+				(build-hatchery (trigger ((check_drone_ready_expand ))) build_expansion_hatchery -1)
+			)
+		)
+	)
+	(C overlord-upgrades (seconds 1.0) (goal ((has_overlord_speed )))
+		(elements 
+			(
+				(research-overlord-speed (trigger ((mineral_count 150 >)(gas_count 150 >)(has_completed_lair ))) upgrade_overlord_speed -1)
+			)
+		)
+	)
+	(RDC life (goal ((game_over )))		(drives 
+			(
+				(build-supply (trigger ((supply_available 2 <=))) build-overlords-competence((seconds 0.5))
+			)
+			(
+				(attack-enemy (trigger ((has_completed_spawning_pool )(force_size 70 >=)(is_attacking 0 =))) attack-enemy((seconds 0.5))
+			)
+			(
+				(defend-base (trigger ((force_size 40 <)(is_attacking ))) set-to-defend((seconds 0.5))
+			)
+			(
+				(get-vespene (trigger ((has_spawning_pool )(gas_saturated 0 =))) collect-gas-competence((seconds 4.0))
+			)
+			(
+				(send-to-second-expansion (trigger ((mineral_count 300 >)(expansion_count 1 =)(supply_used 40 >))) send-drone-to-expansion((seconds 10.0))
+			)
+			(
+				(send-to-first-expansion (trigger ((mineral_count 225 >=)(expansion_count 0 =))) send-drone-to-expansion((seconds 10.0))
+			)
+			(
+				(build-expansion (trigger ((check_drone_ready_expand ))) build-expansion-competence((seconds 4.0))
+			)
+			(
+				(build-forces (trigger ((has_completed_spawning_pool )(predicted_supply_available 2 >=)(drone_count 10 >))) build-forces-competence((seconds 0.5))
+			)
+			(
+				(build-defences (trigger ((colony_count 4 <)(has_completed_spawning_pool )(mineral_count 50 >=))) build-defences-competence((seconds 5.0))
+			)
+			(
+				(upgrade-to-lair (trigger ((mineral_count 150 >=)(gas_count 100 >=)(has_lair 0 =))) hatchery-upgrade-competence((seconds 10.0))
+			)
+			(
+				(find-enemy (trigger ((found_enemy_base 0 =)(has_spawning_pool ))) scouting-competence((seconds 5.0))
+			)
+			(
+				(build-hydralisk-den (trigger ((has_completed_spawning_pool )(has_hydralisk_den 0 =)(mineral_count 100 >=)(gas_count 50 >=))) build-hydralisk-den-competence((seconds 5.0))
+			)
+			(
+				(build-spawning-pool (trigger ((mineral_count 225 >=)(has_spawning_pool 0 =))) build-pool-competence((seconds 5.0))
+			)
+			(
+				(build-spire (trigger ((mineral_count 200 >=)(gas_count 200 >=)(has_spire 0 =))) build-spire-competence((seconds 10.0))
+			)
+			(
+				(build-macro-hatchery (trigger ((mineral_count 325 >=)(hatchery_count 6 <))) build-macro-hatchery-ap((seconds 5.0))
+			)
+			(
+				(research-zergling-upgrades (trigger ((has_completed_spawning_pool )(has_zergling_speed 0 =)(mineral_count 100 >)(gas_count 100 >))) zergling-upgrades((seconds 5.0))
+			)
+			(
+				(research-hydralisk-upgrades (trigger ((has_completed_hydralisk_den )(has_hydralisk_speed 0 =)(has_hydralisk_range 0 =)(mineral_count 150 >)(gas_count 150 >))) hydralisk-upgrades((seconds 5.0))
+			)
+			(
+				(research-overlord-upgrades (trigger ((has_completed_lair )(has_overlord_speed 0 =)(mineral_count 150 >)(gas_count 150 >))) overlord-upgrades((seconds 5.0))
+			)
+			(
+				(keep-building-drones (trigger ((drone_count 25 <))) drone-production-competence((seconds 1.0))
+			)
+			(
+				(spawn-zerglings (trigger ((has_completed_spawning_pool )(predicted_supply_available 4 >))) spawn-zerglings-ap((seconds 0.05))
+			)
+			(
+				(build-more-drones (trigger ((life ))) drone-production-competence((seconds 1.0))
+			)
+		)
+	)
+)

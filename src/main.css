@@ -1,0 +1,299 @@
+.root {
+    display: block;
+    -fx-background-color: rgba(60, 63, 65, 0.86);
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-font-size: 12px;
+}
+
+.label{
+    -fx-text-fill: #b5b5b6;
+    -fx-font-size: 14px;
+}
+
+
+/* CSS for the menu bar*/
+.menu-bar {
+    -fx-background-color: rgba(60, 63, 65, 0.86);
+    -fx-text-fill: #b5b5b6;
+    -fx-background-insets: 0, 0 0 1 0;
+    /* -fx-padding: 0.416667em 0.166667em 0.0em 0.833em; /* 5 2 0 10 */
+    -fx-padding: 0em 0em 0.0em 0.0em; /* overriden as 5 2 0 0 */
+    /*-fx-border-color: #262626;*/
+    -fx-border-color: linear-gradient(to top right, #006c72, #262626);
+    -fx-border-width: 0px 0px 1px 0px;
+}
+
+.menu-bar .label {
+    -fx-text-fill: #b5b5b6;
+}
+
+.menu-bar .label:hover, .menu-bar .label:focused, .menu-bar .label:showing {
+    -fx-text-fill: #b5b5b6;
+}
+
+.menu-bar .menu-button:hover, .menu-bar .menu-button:focused, .menu-bar .menu-button:showing {
+    -fx-background: -fx-accent;
+    -fx-background-color: #006c72;
+    -fx-text-fill: #b5b5b6;
+}
+
+/* ............................. */
+
+/* CSS for the sub-menu*/
+.menu-item {
+    -fx-background-color: rgba(60, 63, 65, 0.86);
+}
+
+.menu-item .label {
+    -fx-text-fill: #b5b5b6;
+}
+
+.menu-item:hover {
+    -fx-background-color: #006c72;
+}
+
+.context-menu {
+    -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
+    -fx-background-color: rgba(60, 63, 65, 0.86);
+    -fx-background-radius: 0 6 6 6, 0 5 5 5, 0 4 4 4;
+}
+
+/* ............................. */
+
+/* CSS for the tab pane*/
+.tab-pane {
+    -fx-skin: "com.sun.javafx.scene.control.skin.TabPaneSkin";
+    -fx-background-color:rgba(60, 63, 65, 0.86);
+}
+
+/* Make it start at the beggining */
+.tab-pane:top *.tab-header-area {
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em 0.166667em 0.0em 0.0em; /* overriden as 5 2 0 0 */
+    -fx-border-color: linear-gradient(to top right, #006c72, #262626);
+    -fx-border-width: 0 0 1px 0;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+.tab-content-area {
+    -fx-background-color: rgba(39, 39, 40, 0.86);
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.tab {
+    -fx-background-color: rgba(52, 55, 57, 0.86);
+    -fx-text-fill: #b5b5b6;
+    -fx-background-insets: 0 -20 0 0;
+    -fx-padding: 0.166667em 20 0 20;
+    -fx-border-color: #262626;
+    -fx-border-width: 0 1px 0 1px;
+}
+
+.tab .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: #b5b5b6;
+    -fx-border-width: 0 0 0 0;
+}
+
+/*noinspection ALL*/
+.tab:selected {
+    -fx-background-color: rgba(108, 113, 116, 0.86);
+    /*-fx-padding: -2px 5px -2px 5px;*/
+    -fx-border-color: #006c72;
+    /*-fx-border-width: 1px 1px 1px 1px;*/
+    -fx-focus-color: transparent;
+    -fx-background-insets: -1.4, 0, 1, 2;
+}
+
+.tab:focused{
+    -fx-focus-color: transparent;
+    -fx-padding: 1;
+    -fx-background-color: transparent;
+    -fx-background-insets: -1.4, 0, 1;
+    -fx-background-radius: 1.4, 0, 0;
+}
+/* ............................. */
+
+.scroll-pane > .viewport {
+    -fx-background-color: rgba(39, 39, 40, 0.86);
+}
+
+/* ............................. */
+
+
+/* The main scrollbar **track** CSS class  */
+.scroll-pane  .scroll-bar:horizontal .track ,
+.scroll-pane  .scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color:derive(#262626,40%);
+    -fx-background-radius: 0;
+}
+
+
+.scroll-pane .scroll-bar:horizontal ,
+.scroll-pane  .scroll-bar:vertical{
+    -fx-background-color:transparent;
+    -fx-border-color:derive(#262626,40%);
+}
+
+.scroll-pane .scroll-bar:horizontal:hover .track ,
+.scroll-pane .scroll-bar:horizontal:pressed .track ,
+.scroll-pane .scroll-bar:vertical:hover .track,
+.scroll-pane .scroll-bar:vertical:pressed .track{
+    -fx-background-color: derive(#434343,20%);
+    -fx-opacity: 0.2;
+    -fx-background-radius: 0;
+
+}
+
+/* The main scrollbar **thumb** CSS class on event of "hover" and "pressed" */
+.scroll-pane .scroll-bar .thumb,
+.scroll-pane .scroll-bar .thumb{
+    -fx-background-color: derive(#434343,50%);
+}
+
+/* The main scrollbar **thumb** CSS class on event of "hover" and "pressed" */
+.scroll-pane .scroll-bar .thumb:hover,
+.scroll-pane .scroll-bar .thumb:pressed{
+    -fx-background-color: derive(black,50%);
+}
+
+.scroll-pane .increment-button:hover ,.scroll-pane .decrement-button:hover {
+    -fx-background-color:transparent;
+    -fx-border-color:derive(gray,80%);
+    -fx-padding:5px;
+}
+
+.scroll-pane .corner {
+    -fx-background-color: derive(#434343,50%);
+}
+
+
+
+/* ............................. */
+.button {
+    -fx-padding: 5 22 5 22;
+    -fx-border-color: #b5b5b6;
+    -fx-background-radius: 0;
+    -fx-background-color: #1d1d1d;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 11pt;
+    -fx-text-fill: #b5b5b6;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+.button:hover {
+    -fx-background-color: #3a3a3a;
+}
+
+.button:pressed, .button:default:hover:pressed {
+    -fx-background-color: #b5b5b6;
+    -fx-text-fill: #1d1d1d;
+}
+
+/*.button:focused {*/
+    /*-fx-border-color: #b5b5b6, #b5b5b6;*/
+    /*-fx-border-width: 1, 1;*/
+    /*-fx-border-style: solid, segments(1, 1);*/
+    /*-fx-border-radius: 0, 0;*/
+    /*-fx-border-insets: 1 1 1 1, 0;*/
+/*}*/
+
+.button:disabled, .button:default:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: #b5b5b6;
+}
+
+.button:default {
+    -fx-background-color: -fx-focus-color;
+    -fx-text-fill: #b5b5b6;
+}
+
+.button:default:hover {
+    -fx-background-color: derive(-fx-focus-color,30%);
+}
+/* ............................. */
+
+.tree-view{
+    -fx-background-color: derive(#434343,50%);
+}
+
+.list-view {
+    -fx-background-color: derive(#434343,50%);
+}
+
+/* ............................. */
+.popover{
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: #b5b5b6;
+    -fx-padding: 0 0 0 0;
+}
+
+.popover > .content {
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: #b5b5b6;
+    -fx-font-size: 14px;
+    -fx-indent: 20 20 20 20;
+}
+
+popover  > .title{
+    -fx-text-fill: #b5b5b6;
+}
+
+/*popover  > .content > .accordion > .titled-pane > .title > .arrow-button > .arrow {*/
+    /*-fx-background-color: red !important;*/
+    /*-fx-fill: red !important;*/
+    /*-fx-pref-height: 34.0 !important;*/
+/*}*/
+
+/*popover  > .content > .accordion > .titled-pane > .title > .arrow-button > .arrow {*/
+    /*-fx-background-color: red !important;*/
+    /*-fx-fill: red !important;*/
+    /*-fx-pref-height: 34.0 !important;*/
+/*}*/
+
+/*.popover  > .content > .accordion > .titled-pane > .title > .arrow-button {*/
+    /*-fx-background-color: yellow !important;*/
+    /*-fx-fill:yellow !important;*/
+/*}*/
+
+.popover > .border {
+    -fx-stroke-width: 0;
+    -fx-fill: linear-gradient(to top right, #006c72, #262626) !important;
+    -fx-effect: dropshadow(gaussian, #006c72, 6.0, 0.0, 1.0, 1.0);
+}
+
+.popover .label{
+    -fx-text-fill: #b5b5b6;
+}
+
+.popover .label{
+    -fx-text-fill: #b5b5b6;
+}
+
+.popover .text-field{
+    -fx-background-color: rgba(60, 63, 65, 0.86);
+    -fx-text-fill: #b5b5b6;
+}
+
+
+.text-area{
+    -fx-background-color: rgba(60, 63, 65, 0.86);
+    -fx-text-fill: #b5b5b6;
+}
+
+.text-area .content{
+    -fx-background-color: rgba(60, 63, 65, 0.86);
+    -fx-text-fill: #b5b5b6;
+
+}
+
+.text-field{
+    -fx-background-color: rgba(60, 63, 65, 0.86);
+    -fx-text-fill: #b5b5b6;
+}
+/* ............................. */
