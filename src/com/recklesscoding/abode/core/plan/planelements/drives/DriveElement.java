@@ -23,6 +23,67 @@ public class DriveElement extends ElementWithTrigger {
         super(nameOfElement);
     }
 
+    /**
+     * For XPOSH
+     *
+     * @param nameOfElement
+     * @param driveElementSenses
+     */
+    public DriveElement(String nameOfElement, List<Sense> driveElementSenses) {
+        super(nameOfElement);
+
+        if (driveElementSenses != null) {
+            this.driveElementSenses = driveElementSenses;
+        }
+        this.frequencyUnit = "sec";
+        this.frequencyValue = 0;
+    }
+
+    public DriveElement(String nameOfElement,  PlanElement acTriggered, List<Sense> driveElementSenses) {
+        super(nameOfElement, acTriggered);
+
+        if (driveElementSenses != null) {
+            this.driveElementSenses = driveElementSenses;
+        }
+        this.frequencyUnit = "sec";
+        this.frequencyValue = 0;
+    }
+
+    /**
+     * For XPOSH
+     *
+     * @param nameOfElement
+     * @param driveElementSenses
+     * @param frequencyValue
+     */
+    public DriveElement(String nameOfElement, List<Sense> driveElementSenses, double frequencyValue) {
+        super(nameOfElement);
+
+        if (driveElementSenses != null) {
+            this.driveElementSenses = driveElementSenses;
+        }
+        this.frequencyUnit = "sec";
+        this.frequencyValue = frequencyValue;
+    }
+
+    /**
+     * For XPOSH
+     *
+     * @param nameOfElement
+     * @param driveElementSenses
+     * @param frequencyValue
+     */
+    public DriveElement(String nameOfElement,  PlanElement acTriggered, List<Sense> driveElementSenses, double frequencyValue) {
+        super(nameOfElement, acTriggered);
+
+        if (driveElementSenses != null) {
+            this.driveElementSenses = driveElementSenses;
+        }
+        this.frequencyUnit = "sec";
+        this.frequencyValue = frequencyValue;
+    }
+
+
     public DriveElement(String nameOfElement, List<Sense> driveElementSenses, PlanElement acTriggered, String frequencyUnit, double frequencyValue) {
         super(nameOfElement, acTriggered);
 

@@ -24,7 +24,7 @@ public class SensesTableView extends TableViewPanel {
         nameColumn.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getNameOfElement()));
 
         TableColumn<Sense,String> predicateColumn = new TableColumn<>(PREDICATE_COLUMN);
-        predicateColumn.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getPredicate()));
+        predicateColumn.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getComperator()));
 
         TableColumn<Sense,String> valueColumn = new TableColumn<>(VALUE_COLUMN);
         valueColumn.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getValue()));

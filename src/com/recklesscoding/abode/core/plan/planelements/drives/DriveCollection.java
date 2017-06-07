@@ -31,6 +31,29 @@ public class DriveCollection extends ElementWithTrigger {
             this.goals = new LinkedList<>();
     }
 
+    public DriveCollection(String nameOfElement, List<Sense> goals) {
+        super(nameOfElement);
+        this.realTime = realTime;
+        if  (!(goals == null))
+            this.goals = goals;
+        else
+            this.goals = new LinkedList<>();
+    }
+
+    public DriveCollection(String nameOfElement, List<Sense> goals, List<DriveElement> driveElements) {
+        super(nameOfElement);
+        this.realTime = realTime;
+        if  (!(goals == null))
+            this.goals = goals;
+        else
+            this.goals = new LinkedList<>();
+
+        if  (!(driveElements == null))
+            this.driveElements = driveElements;
+        else
+            this.driveElements = new LinkedList<>();
+    }
+
     public DriveElement findDriveElement(String elementsName) {
         for (DriveElement drive : driveElements) {
             if (drive.getNameOfElement().equals(elementsName))

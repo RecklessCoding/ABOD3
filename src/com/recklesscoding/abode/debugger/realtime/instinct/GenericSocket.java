@@ -1,17 +1,15 @@
-package com.recklesscoding.abode.debugger.realtime;
+package com.recklesscoding.abode.debugger.realtime.instinct;
 
 
 import java.io.*;
 import java.net.Socket;
 import java.net.SocketException;
 
-/**
- * Athor: Andreas
- * Date: 19/01/2016.
- */
+
 public abstract class GenericSocket implements ISocketListener {
 
-    public static int DEFAULT_PORT = 2010;
+    public static int DEFAULT_PORT = 3000;
+
     public int port;
     protected Socket socketConnection = null;
     private BufferedWriter output = null;
@@ -187,7 +185,7 @@ public abstract class GenericSocket implements ISocketListener {
      * @return true if the debug flag 'flag' is set.
      */
     public boolean debugFlagIsSet(int flag) {
-        return ((flag & debugFlags) != 0) ? true : false;
+        return (flag & debugFlags) != 0;
     }
 
     /**

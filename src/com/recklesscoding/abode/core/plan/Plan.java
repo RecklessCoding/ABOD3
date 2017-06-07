@@ -1,11 +1,13 @@
 package com.recklesscoding.abode.core.plan;
 
 import com.recklesscoding.abode.core.plan.planelements.PlanElement;
+import com.recklesscoding.abode.core.plan.planelements.Sense;
 import com.recklesscoding.abode.core.plan.planelements.action.ActionEvent;
 import com.recklesscoding.abode.core.plan.planelements.action.ActionPattern;
 import com.recklesscoding.abode.core.plan.planelements.competence.Competence;
 import com.recklesscoding.abode.core.plan.planelements.competence.CompetenceElement;
 import com.recklesscoding.abode.core.plan.planelements.drives.DriveCollection;
+import com.recklesscoding.abode.core.plan.planelements.drives.DriveElement;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -19,11 +21,17 @@ public class Plan {
 
     private static Plan instance = null;
 
+    private volatile List<Sense> senses = new LinkedList<>();
+
     private volatile List<ActionEvent> actionEvents = new LinkedList<>();
 
     private volatile List<ActionPattern> actionPatterns = new LinkedList<>();
 
     private volatile List<Competence> competences = new LinkedList<>();
+
+    private volatile List<CompetenceElement> competenceElements = new LinkedList<>();
+
+    private volatile List<DriveElement> driveElements = new LinkedList<>();
 
     private volatile List<DriveCollection> driveCollections = new LinkedList<>();
 
@@ -43,6 +51,39 @@ public class Plan {
         driveCollections.clear();
     }
 
+    public ActionEvent createAction(String name) {
+        ActionEvent action = findAction(name);
+        if (action != null) {
+            return action;
+        }
+        action = new ActionEvent(name);
+        actionEvents.add(action);
+
+        return action;
+    }
+
+    public Sense createSense(String name) {
+        Sense sense = findSense(name);
+        if (sense != null) {
+            return sense;
+        }
+        sense = new Sense(name);
+        senses.add(sense);
+
+        return sense;
+    }
+
+    public Sense createSense(String name, String comperator, String value) {
+        Sense sense = findSense(name);
+        if (sense != null) {
+            return sense;
+        }
+        sense = new Sense(name, comperator, value);
+        senses.add(sense);
+
+        return sense;
+    }
+
     public void addActionPattern(ActionPattern action) {
         actionPatterns.add(action);
     }
@@ -51,12 +92,28 @@ public class Plan {
         competences.add(competence);
     }
 
+    public void addCompetenceElement(CompetenceElement competenceElement) {
+        competenceElements.add(competenceElement);
+    }
+
+    public void addDriveElement(DriveElement driveElement) {
+        driveElements.add(driveElement);
+    }
+
     public void addDriveCollection(DriveCollection driveCollection) {
         this.driveCollections.add(driveCollection);
     }
 
     public List<DriveCollection> getDriveCollections() {
         return driveCollections;
+    }
+
+    public List<DriveElement> getDriveElements() {
+        return driveElements;
+    }
+
+    public List<CompetenceElement> getCompetenceElements() {
+        return competenceElements;
     }
 
     public List<Competence> getCompetences() {
@@ -75,15 +132,13 @@ public class Plan {
         driveCollections.remove(driveCollection);
     }
 
-    public ActionEvent createAction(String name) {
-        ActionEvent action = findAction(name);
-        if (action != null) {
-            return action;
+    public Sense findSense(String name) {
+        for (Sense sense : senses) {
+            if (sense.getNameOfElement().equals(name)) {
+                return sense;
+            }
         }
-        action = new ActionEvent(name);
-        actionEvents.add(action);
-
-        return action;
+        return null;
     }
 
     public ActionEvent findAction(String name) {
@@ -120,6 +175,22 @@ public class Plan {
                 if (competenceElement.getNameOfElement().equals(name))
                     return competenceElement;
             }
+        }
+        return null;
+    }
+
+    public CompetenceElement findCompetenceElementXPOSH(String name) {
+        for (CompetenceElement competenceElement : competenceElements) {
+            if (competenceElement.getNameOfElement().equals(name))
+                return competenceElement;
+        }
+        return null;
+    }
+
+    public DriveElement findDriveElementXPOSH(String name) {
+        for (DriveElement driveElement : driveElements) {
+            if (driveElement.getNameOfElement().equals(name))
+                return driveElement;
         }
         return null;
     }

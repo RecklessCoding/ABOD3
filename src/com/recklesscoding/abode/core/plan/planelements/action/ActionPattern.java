@@ -25,6 +25,12 @@ public class ActionPattern extends ElementWithTrigger {
         super(nameOfElement);
     }
 
+    public ActionPattern(String name,List<ActionEvent> actions) {
+        super(name);
+
+        this.actionEvents = actions;
+    }
+
     public ActionPattern(String name, double timeValue, TimeUnits timeUnits, List<ActionEvent> actions) {
         super(name);
 

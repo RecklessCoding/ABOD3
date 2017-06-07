@@ -1,10 +1,10 @@
 package com.recklesscoding.abode.gui.views.diagramview.diagram;
 
-import com.recklesscoding.abode.gui.views.diagramview.diagram.controller.MouseGestures;
-import com.recklesscoding.abode.gui.views.diagramview.diagram.graphviewer.GraphNodesLayer;
 import com.recklesscoding.abode.core.plan.nodes.NodesHolder;
 import com.recklesscoding.abode.core.plan.nodes.PlanElementNode;
 import com.recklesscoding.abode.core.plan.planelements.PlanElement;
+import com.recklesscoding.abode.gui.views.diagramview.diagram.controller.MouseGestures;
+import com.recklesscoding.abode.gui.views.diagramview.diagram.graphviewer.GraphNodesLayer;
 import com.recklesscoding.abode.gui.views.diagramview.diagram.graphviewer.layout.PlanHorizontalLayout;
 import com.recklesscoding.abode.gui.views.diagramview.diagram.graphviewer.layout.PlanLayout;
 import com.recklesscoding.abode.gui.views.diagramview.diagram.graphviewer.layout.PlanLayoutType;
@@ -14,6 +14,7 @@ import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -37,6 +38,8 @@ public class GraphWindow {
 
     private PlanLayout diagramViewLayout;
 
+    private List<PlanElementNode> lastUpdatedNodes = new ArrayList<>();
+
     public GraphWindow(Stage stage, PlanLayoutType diagramViewLayoutType) {
         init(stage);
         initDiagramView(diagramViewLayoutType);
@@ -51,9 +54,9 @@ public class GraphWindow {
 //        graphNodesLayer.loadLocationsFromMemory();
     }
 
-    public synchronized void update(boolean decreaseGlow) {
+    public synchronized void update() {
         for (PlanElementNode planElementNode : nodesHolder.getAllPlanElementNodes()) {
-            planElementNode.updateCell(decreaseGlow);
+            planElementNode.decreaseGlow();
         }
     }
 

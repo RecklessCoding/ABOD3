@@ -14,7 +14,29 @@ import javafx.scene.paint.Color;
  */
 public class ActionPatternNode extends PlanElementNode {
 
+    private boolean isActivated = false;
+    private int nodesActivated = 0;
+
     public ActionPatternNode(PlanElement planElement) {
         super(planElement, Color.DARKOLIVEGREEN);
+    }
+
+    public void activate() {
+        nodesActivated++;
+
+        if (nodesActivated < getCellChildren().size())
+        {
+            isActivated = true;
+        }
+
+        if (nodesActivated == getCellChildren().size())
+        {
+            isActivated = false;
+            nodesActivated = 0;
+        }
+    }
+
+    public boolean isActivated() {
+        return isActivated;
     }
 }

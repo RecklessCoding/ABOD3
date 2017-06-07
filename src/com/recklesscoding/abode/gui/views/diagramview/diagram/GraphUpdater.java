@@ -7,7 +7,7 @@ package com.recklesscoding.abode.gui.views.diagramview.diagram;
 public class GraphUpdater implements Runnable {
 
     // In MS.
-    private long decreaseGlowTimer = 10000;
+    private long decreaseGlowTimer = 1000;
 
     private boolean isRunning = false;
 
@@ -22,31 +22,22 @@ public class GraphUpdater implements Runnable {
 
     @Override
     public void run() {
-        boolean decreaseGlow = false;
-        long timeThreadStarted = System.currentTimeMillis();
-        long currentTime;
-
         while (isRunning) {
-            currentTime = System.currentTimeMillis();
-            if (isTimeToUpdateElement(timeThreadStarted, currentTime)) {
-                decreaseGlow = true;
+            try {
+                Thread.sleep(decreaseGlowTimer);
+                graphWindow.update();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
-            graphWindow.update(decreaseGlow);
-            decreaseGlow = false;
         }
 
         setAllCellsToNoGlow();
     }
 
-    private boolean isTimeToUpdateElement(long timeThreadStarted, long currentTime) {
-        return ((timeThreadStarted - currentTime) % decreaseGlowTimer) == 0;
-    }
-
-
     private void setAllCellsToNoGlow() {
         // Sets back everything to 0 glow. 30 was chosen as we decrease by 0.1 per time.
         for (int i = 0; i < 30; i++) {
-            graphWindow.update(true);
+            graphWindow.update();
         }
     }
 

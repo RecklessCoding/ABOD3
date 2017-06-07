@@ -1,5 +1,10 @@
 package com.recklesscoding.abode.core.plan.planelements;
 
+import com.recklesscoding.abode.core.plan.nodes.PlanElementNode;
+
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by Andreas on 28/12/2015.
  */
@@ -13,23 +18,31 @@ public class PlanElement {
 
     private int usageCounter = 0;
 
-    private boolean isUsed = false;
+    private boolean isSetToUpdate = false;
+
+    private List<PlanElementNode> planElementNodes = new ArrayList<>();
 
     public PlanElement(String nameOfElement) {
         this.nameOfElement = nameOfElement;
         ID++;
     }
 
-    public synchronized void setToUpdate()
-    {
-        isUsed = true;
+    public synchronized void setToUpdate() {
+        isSetToUpdate = true;
+        for (PlanElementNode planElementNode: planElementNodes) {
+            planElementNode.increaseGlow();
+        }
         increaseUsageCounter();
     }
 
-    public synchronized void setFinishUpdate( )
-    {
-        this.isUsed = false;
+    public void setFinishUpdate() {
+        isSetToUpdate = false;
     }
+
+    public void encloseToNode(PlanElementNode planElementNode) {
+        this.planElementNodes.add(planElementNode);
+    }
+
 
     public int getID() {
         return ID;
@@ -56,7 +69,7 @@ public class PlanElement {
         this.usageCounter++;
     }
 
-    public boolean getIsUsed() {
-        return isUsed;
+    public boolean isSetToUpdate() {
+        return isSetToUpdate;
     }
 }

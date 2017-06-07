@@ -1,5 +1,6 @@
 package com.recklesscoding.abode.core;
 
+import com.recklesscoding.abode.core.plan.reader.xposh.XPOSHPlanReader;
 import com.recklesscoding.abode.debugger.Debugger;
 import com.recklesscoding.abode.debugger.IDebugger;
 import com.recklesscoding.abode.gui.EditorLayout;
@@ -51,7 +52,9 @@ public class Editor {
     }
 
     public void readPlanFile(String file) {
-        if (file.endsWith(".inst")) {
+        if (file.endsWith(".xml")) {
+            planReader = new XPOSHPlanReader();
+        }  else if (file.endsWith(".inst")) {
             planReader = new InstPlanReader();
         } else if (file.endsWith(".lap")) {
             planReader = new LapPlanReader();

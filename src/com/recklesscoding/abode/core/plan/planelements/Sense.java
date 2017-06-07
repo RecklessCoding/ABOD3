@@ -8,12 +8,17 @@ public class Sense extends PlanElement {
 
     private String value;
 
-    private String predicate;
+    private String comperator;
 
-    public Sense(String nameOfElement, String predicate, String value) {
+
+    public Sense(String nameOfElement) {
+        super(nameOfElement);
+    }
+
+    public Sense(String nameOfElement, String comperator, String value) {
         super(nameOfElement);
         this.value = value;
-        this.predicate = predicate;
+        this.comperator = comperator;
     }
 
     public String getValue() {
@@ -24,11 +29,11 @@ public class Sense extends PlanElement {
         this.value = value;
     }
 
-    public String getPredicate() {
-        return predicate;
+    public String getComperator() {
+        return comperator;
     }
 
-    public void setPredicate(String predicate) {
-        this.predicate = predicate;
+    public void setComperator(String comperator) {
+        this.comperator = comperator;
     }
 }

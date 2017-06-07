@@ -1,5 +1,6 @@
 package com.recklesscoding.abode.core.plan.nodes;
 
+import com.recklesscoding.abode.core.plan.nodes.plannodes.*;
 import com.recklesscoding.abode.core.plan.planelements.PlanElement;
 import javafx.scene.Node;
 import javafx.scene.effect.Glow;
@@ -43,6 +44,7 @@ public class PlanElementNode extends Pane {
         if (planElement != null) {
             this.planElement = planElement;
             this.text = new Text(planElement.getNameOfElement());
+            this.planElement.encloseToNode(this);
         } else {
             this.planElement = new PlanElement("Error");
             this.text = new Text("Element error");
@@ -50,15 +52,49 @@ public class PlanElementNode extends Pane {
         initView(color);
     }
 
-    public synchronized void updateCell(boolean decrease) {
-        boolean isUsed = planElement.getIsUsed();
-        if (isUsed) {
-            setGlow(isUsed);
+    public void decreaseGlow() {
+        setGlow(false);
+    }
+
+    public void increaseGlow() {
+        boolean isCorrectElement = true;
+        List<PlanElement> planElements = new ArrayList<>();
+        planElements.add(this.planElement);
+        PlanElementNode planNode = this;
+        if (!((planNode instanceof DriveElementNode) || (planNode instanceof DriveCollectionNode))) {
+            while (((planNode = planNode.getNodeParent()) != null)) {
+                if (planNode instanceof RouteElementNode) {
+                    isCorrectElement = true;
+                    break;
+                } else {
+                    if (!planNode.getPlanElement().isSetToUpdate() && !(planNode instanceof ActionPatternNode)) {
+                        isCorrectElement = false;
+                        break;
+                    } else if (planNode instanceof ActionPatternNode) {
+                        if (((ActionPatternNode) planNode).isActivated()) {
+                            isCorrectElement = true;
+                            planElements.add(planNode.planElement);
+                        }
+                    } else {
+                        isCorrectElement = true;
+                        planElements.add(planNode.planElement);
+                    }
+                }
+            }
         }
-        if (decrease) {
-            setGlow(!decrease);
+
+        if (isCorrectElement) {
+            setGlow(true);
+
+            if (this instanceof ActionNode) {
+                if (this.getNodeParent() instanceof ActionPatternNode) {
+                    ((ActionPatternNode) this.getNodeParent()).activate();
+                }
+                for (PlanElement planElement : planElements) {
+                    planElement.setFinishUpdate();
+                }
+            }
         }
-        planElement.setFinishUpdate();
     }
 
     public PlanElementNode getNodeParent() {
@@ -128,16 +164,20 @@ public class PlanElementNode extends Pane {
     }
 
     private void setGlow(boolean increase) {
+        double glowLevel = glow.getLevel();
         if (increase) {
-            glow.setLevel(glow.getLevel() + 0.5);
+            glowLevel = glowLevel + 0.3;
         } else {
-            glow.setLevel(glow.getLevel() - 0.1);
+            glowLevel = glowLevel - 0.2;
         }
-        if (glow.getLevel() > 3)
-            glow.setLevel(3);
-        else if (glow.getLevel() < 0)
+        if (glowLevel > 1) {
+            glow.setLevel(1);
+        } else if (glowLevel < 0) {
             glow.setLevel(0);
-        else
-            rectangle.setEffect(glow);
+        } else {
+            glow.setLevel(glowLevel);
+        }
+
+        rectangle.setEffect(glow);
     }
 }

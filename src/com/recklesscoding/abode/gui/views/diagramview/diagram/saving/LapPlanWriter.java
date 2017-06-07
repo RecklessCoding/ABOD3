@@ -189,7 +189,7 @@ public class LapPlanWriter implements IWriter {
 
     private String constructValuePredicate(Sense sense) {
         if (sense.getValue() != null && !sense.getValue().isEmpty() )
-            return sense.getValue() + EMPTY_SPACE + sense.getPredicate();
+            return sense.getValue() + EMPTY_SPACE + sense.getComperator();
         else
             return "";
     }

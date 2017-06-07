@@ -1,6 +1,7 @@
 package com.recklesscoding.abode;
 
 import com.recklesscoding.abode.core.Editor;
+import com.recklesscoding.abode.debugger.realtime.xposh.XPOSHUnityServer;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.scene.Scene;
@@ -54,6 +55,9 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryWindow) {
+
+        new Thread(new XPOSHUnityServer()).start();
+
         editor = new Editor(primaryWindow);
         initWindow(primaryWindow);
         primaryWindow.show();

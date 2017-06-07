@@ -4,6 +4,7 @@ import com.recklesscoding.abode.core.plan.planelements.ElementWithTrigger;
 import com.recklesscoding.abode.core.plan.planelements.PlanElement;
 import com.recklesscoding.abode.core.plan.planelements.Sense;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -21,6 +22,25 @@ public class CompetenceElement extends ElementWithTrigger {
         super(nameOfElement);
 
         this.senses = new LinkedList<>();
+    }
+
+    public CompetenceElement(String nameOfElement, List<Sense> senses) {
+        super(nameOfElement);
+
+        if (senses != null)
+            this.senses = senses;
+        else
+            this.senses = new ArrayList<>();
+    }
+
+
+    public CompetenceElement(String nameOfElement, List<Sense> senses, PlanElement triggeredElement) {
+        super(nameOfElement, triggeredElement);
+
+        if (senses != null)
+            this.senses = senses;
+        else
+            this.senses = new ArrayList<>();
     }
 
     public CompetenceElement(String nameOfElement, List<Sense> senses, PlanElement triggeredElement, Integer retries) {

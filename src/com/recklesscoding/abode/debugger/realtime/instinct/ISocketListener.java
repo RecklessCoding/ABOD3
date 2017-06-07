@@ -1,4 +1,4 @@
-package com.recklesscoding.abode.debugger.realtime;
+package com.recklesscoding.abode.debugger.realtime.instinct;
 
 /**
  * Athor: Andreas

@@ -25,6 +25,22 @@ public class Competence extends PlanElement {
         super(nameOfElement);
     }
 
+    public Competence(String nameOfElement, List<Sense> goals, List<CompetenceElement> comptenceElements) {
+        super(nameOfElement);
+        this.goals = goals;
+
+        if (goals != null) {
+            this.goals = goals;
+        } else {
+            this.goals = new LinkedList<>();
+        }
+        if (comptenceElements != null) {
+            this.competenceElements = comptenceElements;
+        } else {
+            this.competenceElements = new LinkedList<>();
+        }
+    }
+
     public Competence(String nameOfElement, double timeout, TimeUnits timeUnits, List<Sense> goals, List<CompetenceElement> comptenceElements) {
         super(nameOfElement);
         this.timeout = timeout;

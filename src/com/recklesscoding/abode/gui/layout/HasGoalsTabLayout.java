@@ -5,7 +5,6 @@ import javafx.collections.ObservableList;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import javafx.stage.Window;
 import com.recklesscoding.abode.util.wrappers.ListViewWrapper;
 import com.recklesscoding.abode.util.wrappers.VBoxWrapper;
 import com.recklesscoding.abode.core.plan.planelements.Sense;
@@ -45,7 +44,7 @@ public abstract class HasGoalsTabLayout extends TabLayout {
                 if (newValue instanceof Sense) {
                     Sense goal = (Sense) newValue;
                     this.textGoalName.setText(goal.getNameOfElement());
-                    this.textGoalPredicate.setText(goal.getPredicate());
+                    this.textGoalPredicate.setText(goal.getComperator());
                     this.textGoalValue.setText(goal.getValue());
                 }
             }

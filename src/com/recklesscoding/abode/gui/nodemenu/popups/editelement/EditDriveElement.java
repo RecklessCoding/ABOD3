@@ -5,7 +5,6 @@ import com.recklesscoding.abode.core.plan.planelements.PlanElement;
 import com.recklesscoding.abode.core.plan.planelements.competence.CompetenceElement;
 import com.recklesscoding.abode.core.plan.planelements.drives.DriveCollection;
 import com.recklesscoding.abode.gui.nodemenu.popups.panes.GoalsPane;
-import com.recklesscoding.abode.gui.nodemenu.popups.panes.RetriesPane;
 import com.recklesscoding.abode.gui.nodemenu.popups.panes.SelectRTPane;
 import com.recklesscoding.abode.gui.views.diagramview.diagram.GraphWindow;
 import javafx.scene.control.Button;
@@ -36,7 +35,7 @@ public class EditDriveElement extends EditElementPopup {
         DriveCollection driveCollection = (DriveCollection) planElement;
 
         goalsPane = new GoalsPane(driveCollection.getGoals());
-        rtPane = new SelectRTPane(driveCollection.getIsUsed());
+        rtPane = new SelectRTPane(driveCollection.isSetToUpdate());
 
         addContentItem(new Label(REAL_TIME));
         addContentItem(rtPane);

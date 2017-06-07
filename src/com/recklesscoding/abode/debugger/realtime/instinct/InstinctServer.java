@@ -17,6 +17,8 @@
 
 package com.recklesscoding.abode.debugger.realtime.instinct;
 
+import com.recklesscoding.abode.debugger.realtime.xposh.XPOSHUnityServer;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -37,10 +39,6 @@ public class InstinctServer {
 
     public void stopServer() {
         server.stop();
-    }
-
-    public boolean isRunning() {
-        return !server.isStopped();
     }
 
     private void runServer() {
