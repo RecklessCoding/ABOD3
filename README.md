@@ -4,11 +4,7 @@ ABODE is an integrated development environment (IDE) for Behavior Oriented Desig
 Unlike previous updates of ABODE, it was built from scratch, without any usage of the existing source code. In addition to new functionalities, the new version aims at using modular, clean-code, with all the features and performance enhancements of Java 8. The GUI framework used, JavaFX, gives the new version a clean, modern look, while maintaining cross-platform compatibility.
 
 # Where can I get it from?
-
-ABOD3 is currently available only on this GitHub. An installation guide is available [here](https://github.com/RecklessCoding/ABOD3/tree/master/Pre-compiled%20Jars) and precompiled JARs were made available [here](https://github.com/RecklessCoding/ABOD3/tree/master/Pre-compiled%20Jars).
-
-# Where can I get it from?
-ABOD3 is currently available only on this GitHub. An installation guide is available [here](https://github.com/RecklessCoding/ABOD3/tree/master/Pre-compiled%20Jars) and precompiled JARs were made available [here](https://github.com/RecklessCoding/ABOD3/tree/master/Pre-compiled%20Jars).
+ABOD3 is currently available only on this GitHub. An installation guide is available [here](https://github.com/RecklessCoding/ABOD3/wiki/Installation-Instructions) and precompiled JARs were made available [here](https://github.com/RecklessCoding/ABOD3/tree/master/Pre-compiled%20Jars).
 
 # Who are the developers?
 The lead developer is [Andreas Theodorou](http://recklesscoding.com/), who at time of writing is a PhD student at the [University of Bath](http://bath.ac.uk/). 
