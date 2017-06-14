@@ -17,8 +17,6 @@
 
 package com.recklesscoding.abode.debugger.realtime.instinct;
 
-import com.recklesscoding.abode.debugger.realtime.xposh.XPOSHUnityServer;
-
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;

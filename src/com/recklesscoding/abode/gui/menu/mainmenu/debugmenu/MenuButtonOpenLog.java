@@ -28,7 +28,7 @@ public class MenuButtonOpenLog extends MenuButtonFileHandler {
         this.setOnAction(actionEvent -> {
             File file = getFileChooser().showOpenDialog(primaryStage);
             if (file != null) {
-                editor.getDebugger().readLogFile(file.getAbsolutePath());
+                editor.getIncinctDebugger().readLogFile(file.getAbsolutePath());
                 for (MenuItem menuItem : this.getParentMenu().getItems()) {
                     if (menuItem instanceof MenuButtonStartDebug) {
                         menuItem.setDisable(false);

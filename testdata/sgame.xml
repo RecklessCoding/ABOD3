@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Plan>
+    <ActionPatterns>
+    </ActionPatterns>
+    <CompetenceElements>
+        <CompetenceElement name ="CE-GoGetFood" triggers ="GoToNearestFood">
+            <Conditions>
+            </Conditions>
+        </CompetenceElement>
+        <CompetenceElement name ="CE-EatFood" triggers ="EatFood">
+            <Conditions>
+            </Conditions>
+        </CompetenceElement>
+        <CompetenceElement name ="CE-HaveNoRocks" triggers ="GoGetRock">
+            <Conditions>
+            </Conditions>
+        </CompetenceElement>
+        <CompetenceElement name ="CE-GoHome" triggers ="GoHome">
+            <Conditions>
+            </Conditions>
+        </CompetenceElement>
+        <CompetenceElement name ="CE-Build" triggers ="AP-Build">
+            <Conditions>
+            </Conditions>
+        </CompetenceElement>
+    </CompetenceElements>
+    <Competences>
+        <Competence name="C-GetFoodToEat">
+            <Goals>
+            </Goals>
+            <CompetenceElements>
+                <CompetenceElement name="CE-GoGetFood"></CompetenceElement>
+                <CompetenceElement name="CE-EatFood"></CompetenceElement>
+            </CompetenceElements>
+        </Competence>
+        <Competence name="C-BuildHome">
+            <Goals>
+            </Goals>
+            <CompetenceElements>
+                <CompetenceElement name="CE-HaveNoRocks"></CompetenceElement>
+                <CompetenceElement name="CE-GoHome"></CompetenceElement>
+                <CompetenceElement name="CE-Build"></CompetenceElement>
+            </CompetenceElements>
+        </Competence>
+        <Competence name="C-BuildBridge">
+            <Goals>
+            </Goals>
+            <CompetenceElements>
+                <CompetenceElement name="CE-HaveNoRocks"></CompetenceElement>
+                <CompetenceElement name="CE-GoNearestBridgeSite"></CompetenceElement>
+                <CompetenceElement name="CE-Build"></CompetenceElement>
+            </CompetenceElements>
+        </Competence>
+    </Competences>
+    <DriveElements>
+        <DriveElement name="DE-IsStarving" triggers ="C-GetFoodToEat" checkTime ="0">
+            <Conditions>
+            </Conditions>
+        </DriveElement>
+        <DriveElement name="DE-IsNight" triggers ="RunHome" checkTime ="0">
+            <Conditions>
+            </Conditions>
+        </DriveElement>
+        <DriveElement name="DE-FoodExists" triggers ="C-GetFoodToEat" checkTime ="0">
+            <Conditions>
+            </Conditions>
+        </DriveElement>
+        <DriveElement name="DE-FoodDoesNotExist" triggers ="Stay" checkTime ="0">
+            <Conditions>
+            </Conditions>
+        </DriveElement>
+        <DriveElement name="DE-BuildBridges" triggers ="C-BuildBridge" checkTime ="0.1">
+            <Conditions>
+            </Conditions>
+        </DriveElement>
+        <DriveElement name="DE-BridgesAllBuilt" triggers ="GoToRiversider" checkTime ="0.1">
+            <Conditions>
+            </Conditions>
+        </DriveElement>
+        <DriveElement name="DE-BuildHome" triggers ="C-BuildHome" checkTime ="0.1">
+            <Conditions>
+            </Conditions>
+        </DriveElement>
+        <DriveElement name="DE-GoHome" triggers ="GoHome" checkTime ="1">
+            <Conditions>
+            </Conditions>
+        </DriveElement>
+        <DriveElement name="DE-IsHome" triggers ="C-Procreate" checkTime ="1">
+            <Conditions>
+            </Conditions>
+        </DriveElement>
+    </DriveElements>
+    <Drives>
+        <Drive name="D-Survive">
+            <Conditions>
+            </Conditions>
+            <DriveElements>
+                <DriveElement name="DE-IsStarving"></DriveElement>
+                <DriveElement name="DE-IsNight"></DriveElement>
+            </DriveElements>
+        </Drive>
+        <Drive name="D-EatFood">
+            <Conditions>
+            </Conditions>
+            <DriveElements>
+                <DriveElement name="DE-FoodExists"></DriveElement>
+                <DriveElement name="DE-FoodDoesNotExist"></DriveElement>
+            </DriveElements>
+        </Drive>
+        <Drive name="D-BuildBridges">
+            <Conditions>
+            </Conditions>
+            <DriveElements>
+                <DriveElement name="DE-BuildBridges"></DriveElement>
+                <DriveElement name="DE-BridgesAllBuilt"></DriveElement>
+            </DriveElements>
+        </Drive>
+        <Drive name="D-BuildHomes">
+            <Conditions>
+            </Conditions>
+            <DriveElements>
+                <DriveElement name="DE-BuildHome"></DriveElement>
+                <DriveElement name="DE-GoHome"></DriveElement>
+            </DriveElements>
+        </Drive>
+        <Drive name="D-Procreate">
+            <Conditions>
+            </Conditions>
+            <DriveElements>
+                <DriveElement name="DE-GoHome"></DriveElement>
+                <DriveElement name="DE-IsHome"></DriveElement>
+            </DriveElements>
+        </Drive>
+    </Drives>
+</Plan>

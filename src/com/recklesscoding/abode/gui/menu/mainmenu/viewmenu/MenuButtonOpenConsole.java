@@ -1,6 +1,6 @@
 package com.recklesscoding.abode.gui.menu.mainmenu.viewmenu;
 
-import com.recklesscoding.abode.gui.console.Console;
+import com.recklesscoding.abode.gui.console.ConsoleGUI;
 import javafx.event.ActionEvent;
 import javafx.scene.control.MenuItem;
 import javafx.stage.Stage;
@@ -9,10 +9,10 @@ import javafx.stage.Stage;
  * Created by Andreas on 17/01/2016.
  */
 public class MenuButtonOpenConsole extends MenuItem {
-
-    private boolean isFullScreen = false;
-
+    
     private static final String NAME_LABEL = "Open Console";
+
+    private ConsoleGUI console;
 
     public MenuButtonOpenConsole(Stage primaryWindow) {
         super(NAME_LABEL);
@@ -26,7 +26,12 @@ public class MenuButtonOpenConsole extends MenuItem {
 
     private void initAction(Stage primaryWindow) {
         setOnAction((ActionEvent actionEvent) -> {
-            Console.getInstance().show();
+            if (console == null) {
+                console = new ConsoleGUI();
+                console.show();
+            } else {
+                console.show();
+            }
         });
     }
 }

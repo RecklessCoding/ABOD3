@@ -3,7 +3,6 @@ package com.recklesscoding.abode.gui.menu.mainmenu.debugmenu;
 import com.recklesscoding.abode.core.Editor;
 import javafx.scene.control.SeparatorMenuItem;
 import javafx.stage.Stage;
-import javafx.stage.Window;
 import com.recklesscoding.abode.gui.menu.wrappers.MenuWrapper;
 
 /**
@@ -19,7 +18,8 @@ public class DebugMenu extends MenuWrapper {
     }
 
     private void init(Stage primaryStage, Editor editor) {
-        addMenuItem(new MenuButtonStartServer(editor));
+        addMenuItem(new MenuButtonStartUnityPOSHServer(editor));
+        addMenuItem(new MenuButtonStartInstinctServer(editor));
         addMenuItem(new SeparatorMenuItem());
 
         addMenuItem(new MenuButtonOpenLog(primaryStage, editor));

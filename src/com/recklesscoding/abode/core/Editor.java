@@ -1,8 +1,9 @@
 package com.recklesscoding.abode.core;
 
 import com.recklesscoding.abode.core.plan.reader.xposh.XPOSHPlanReader;
-import com.recklesscoding.abode.debugger.Debugger;
+import com.recklesscoding.abode.debugger.InsinctDebugger;
 import com.recklesscoding.abode.debugger.IDebugger;
+import com.recklesscoding.abode.debugger.UnityPOSHDebugger;
 import com.recklesscoding.abode.gui.EditorLayout;
 import com.recklesscoding.abode.core.plan.Plan;
 import com.recklesscoding.abode.core.plan.reader.PlanReader;
@@ -37,7 +38,8 @@ public class Editor {
 
     private PlanReader planReader;
 
-    private IDebugger debugger = new Debugger();
+    private IDebugger insinctDebugger = new InsinctDebugger();
+    private IDebugger unityPOSHDebugger = new UnityPOSHDebugger();
 
     /**
      * @param primaryWindow The primary window of the application, where the views will reside.
@@ -82,8 +84,12 @@ public class Editor {
         return editorLayout;
     }
 
-    public IDebugger getDebugger(){
-        return debugger;
+    public IDebugger getUnityPOSHDebugger(){
+        return unityPOSHDebugger;
+    }
+
+    public IDebugger getIncinctDebugger(){
+        return insinctDebugger;
     }
 
     public static Editor getInstance() {

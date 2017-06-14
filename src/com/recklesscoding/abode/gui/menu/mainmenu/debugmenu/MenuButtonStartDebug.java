@@ -24,7 +24,7 @@ public class MenuButtonStartDebug extends MenuItem {
 
     private void initAction(Editor editor) {
         setOnAction((ActionEvent actionEvent) -> {
-            editor.getDebugger().startLogDebugger();
+            editor.getIncinctDebugger().startLogDebugger();
             for (MenuItem menuItem : this.getParentMenu().getItems()) {
                 if (menuItem instanceof MenuButtonOpenLog) {
                     menuItem.setDisable(true);

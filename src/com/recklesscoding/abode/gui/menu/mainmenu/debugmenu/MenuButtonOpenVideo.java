@@ -1,7 +1,6 @@
 package com.recklesscoding.abode.gui.menu.mainmenu.debugmenu;
 
 import com.recklesscoding.abode.core.Editor;
-import com.recklesscoding.abode.gui.EditorLayout;
 import com.recklesscoding.abode.gui.menu.menuitems.MenuButtonFileHandler;
 import javafx.stage.FileChooser;
 import javafx.stage.Window;
@@ -29,7 +28,7 @@ public class MenuButtonOpenVideo extends MenuButtonFileHandler {
                 File file = getFileChooser().showOpenDialog(primaryStage);
                 if (file != null) {
                     String filePath = file.toURI().toURL().toExternalForm();
-                    editor.getDebugger().loadVideo(filePath);
+                    editor.getIncinctDebugger().loadVideo(filePath);
                 }
             } catch (MalformedURLException e) {
                 e.printStackTrace();
