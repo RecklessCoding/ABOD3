@@ -168,7 +168,7 @@ public class PlanElementNode extends Pane {
         if (increase) {
             glowLevel = glowLevel + 0.3;
         } else {
-            glowLevel = glowLevel - 0.2;
+            glowLevel = glowLevel - 0.1 ;
         }
         if (glowLevel > 1) {
             glow.setLevel(1);
