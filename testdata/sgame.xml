@@ -11,7 +11,11 @@
             <Conditions>
             </Conditions>
         </CompetenceElement>
-        <CompetenceElement name ="CE-HaveNoRocks" triggers ="GoGetRock">
+        <CompetenceElement name ="CE-HasNoRocks" triggers ="AP-GoGetRocks">
+            <Conditions>
+            </Conditions>
+        </CompetenceElement>
+        <CompetenceElement name ="CE-HasRocks" triggers ="AP-GoGetRocks">
             <Conditions>
             </Conditions>
         </CompetenceElement>
@@ -37,7 +41,7 @@
             <Goals>
             </Goals>
             <CompetenceElements>
-                <CompetenceElement name="CE-HaveNoRocks"></CompetenceElement>
+                <CompetenceElement name="CE-HasNoRocks"></CompetenceElement>
                 <CompetenceElement name="CE-GoHome"></CompetenceElement>
                 <CompetenceElement name="CE-Build"></CompetenceElement>
             </CompetenceElements>
@@ -46,7 +50,8 @@
             <Goals>
             </Goals>
             <CompetenceElements>
-                <CompetenceElement name="CE-HaveNoRocks"></CompetenceElement>
+                <CompetenceElement name="CE-HasRocks"></CompetenceElement>
+                <CompetenceElement name="CE-HasNoRocks"></CompetenceElement>
                 <CompetenceElement name="CE-GoNearestBridgeSite"></CompetenceElement>
                 <CompetenceElement name="CE-Build"></CompetenceElement>
             </CompetenceElements>
@@ -115,7 +120,7 @@
                 <DriveElement name="DE-BridgesAllBuilt"></DriveElement>
             </DriveElements>
         </Drive>
-        <Drive name="D-BuildHomes">
+        <Drive name="D-BuildHome">
             <Conditions>
             </Conditions>
             <DriveElements>
