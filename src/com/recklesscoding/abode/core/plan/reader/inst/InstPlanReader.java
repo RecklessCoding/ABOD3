@@ -156,7 +156,6 @@ public class InstPlanReader extends PlanReader {
                     if (parrent == null) {
                         ActionEvent action = Plan.getInstance().findAction(competence.getNameOfElement());
                         if (action != null) {
-                            System.out.println(action);
                             List<ActionPattern> actionPatternsWithAction = Plan.getInstance().findActionPatternsWithAction(competence.getNameOfElement());
                             for (ActionPattern actionPattern : actionPatternsWithAction) {
                                 actionPattern.removeActionEvent(action);

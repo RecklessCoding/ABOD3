@@ -93,7 +93,7 @@ public class UnityPOSHServerRunnable implements Runnable {
         try {
             this.serverSocket = new ServerSocket(this.serverPort);
         } catch (IOException e) {
-            throw new RuntimeException("Cannot open port 8080", e);
+            throw new RuntimeException("Cannot open port", e);
         }
     }
 
@@ -116,7 +116,6 @@ public class UnityPOSHServerRunnable implements Runnable {
                 String line;
 
                 while (!isStopped && (line = clientInput.readLine()) != null) {
-                    //  System.out.println(line);
                     handlePlanElementUpdate(line);
                 }
                 clientInput.close();
@@ -142,15 +141,13 @@ public class UnityPOSHServerRunnable implements Runnable {
             // Making sure the search is not pointless
             if (isValidLine(splittedLine)) {
                 botNumber = Integer.parseInt(splittedLine[0]);
-                if (maxNumberOfBots < botNumber) {
-                    maxNumberOfBots = botNumber;
-                    unityPOSHServerRunnable.checkNewMax(maxNumberOfBots);
-                }
+//                if (maxNumberOfBots < botNumber) {
+//                    maxNumberOfBots = botNumber;
+//                    unityPOSHServerRunnable.checkNewMax(maxNumberOfBots);
+//                }
                 planElementName = splittedLine[1];
                 typeOfPlanElement = splittedLine[2];
                 planElement = getPlanElement(planElementName, typeOfPlanElement);
-
-                System.out.println(line);
 
                 if (planElement != null) {
                     planElement.setToUpdate();
@@ -166,7 +163,6 @@ public class UnityPOSHServerRunnable implements Runnable {
             PlanElement planElement = null;
 
             if (isAction(typeOfPlanElement)) {
-                System.out.println(planElementName);
                 planElement = Plan.getInstance().findAction(planElementName);
             } else if (isActionPattern(typeOfPlanElement)) {
                 planElement = Plan.getInstance().findActionPattern(planElementName);

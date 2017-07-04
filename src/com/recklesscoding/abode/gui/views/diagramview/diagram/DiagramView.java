@@ -25,7 +25,6 @@ public class DiagramView extends GraphView {
         graphUpdater = new GraphUpdater(graphWindow);
 
         Platform.runLater(() -> {
-            graphUpdater = new GraphUpdater(graphWindow);
             graphUpdater.startUp();
         });
     }

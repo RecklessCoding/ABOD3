@@ -7,15 +7,15 @@
             <Conditions>
             </Conditions>
         </CompetenceElement>
-        <CompetenceElement name ="CE-EatFood" triggers ="EatFood">
+        <CompetenceElement name ="CE-HasFood" triggers ="EatFood">
             <Conditions>
             </Conditions>
         </CompetenceElement>
-        <CompetenceElement name ="CE-HasNoRocks" triggers ="AP-GoGetRocks">
+        <CompetenceElement name ="CE-HasNoRocks" triggers ="GoGetRocks">
             <Conditions>
             </Conditions>
         </CompetenceElement>
-        <CompetenceElement name ="CE-HasRocks" triggers ="AP-GoGetRocks">
+        <CompetenceElement name ="CE-HasRocks" triggers ="GoGetRocks">
             <Conditions>
             </Conditions>
         </CompetenceElement>
@@ -23,37 +23,43 @@
             <Conditions>
             </Conditions>
         </CompetenceElement>
-        <CompetenceElement name ="CE-Build" triggers ="AP-Build">
+        <CompetenceElement name ="CE-ReadyToBuild" triggers ="BuildHouse">
+            <Conditions>
+            </Conditions>
+        </CompetenceElement>
+        <CompetenceElement name ="CE-HasEnoughEnergy" triggers ="AttemptProcreation">
+            <Conditions>
+            </Conditions>
+        </CompetenceElement>
+        <CompetenceElement name ="CE-NotEnoughEnergy" triggers ="StayHome">
             <Conditions>
             </Conditions>
         </CompetenceElement>
     </CompetenceElements>
     <Competences>
+        <Competence name="C-Procreate">
+            <Goals>
+            </Goals>
+            <CompetenceElements>
+                <CompetenceElement name="CE-HasEnoughEnergy"></CompetenceElement>
+                <CompetenceElement name="CE-NotEnoughEnergy"></CompetenceElement>
+            </CompetenceElements>
+        </Competence>
         <Competence name="C-GetFoodToEat">
             <Goals>
             </Goals>
             <CompetenceElements>
                 <CompetenceElement name="CE-GoGetFood"></CompetenceElement>
-                <CompetenceElement name="CE-EatFood"></CompetenceElement>
+                <CompetenceElement name="CE-HasFood"></CompetenceElement>
             </CompetenceElements>
         </Competence>
         <Competence name="C-BuildHome">
             <Goals>
             </Goals>
             <CompetenceElements>
-                <CompetenceElement name="CE-HasNoRocks"></CompetenceElement>
-                <CompetenceElement name="CE-GoHome"></CompetenceElement>
-                <CompetenceElement name="CE-Build"></CompetenceElement>
-            </CompetenceElements>
-        </Competence>
-        <Competence name="C-BuildBridge">
-            <Goals>
-            </Goals>
-            <CompetenceElements>
                 <CompetenceElement name="CE-HasRocks"></CompetenceElement>
                 <CompetenceElement name="CE-HasNoRocks"></CompetenceElement>
-                <CompetenceElement name="CE-GoNearestBridgeSite"></CompetenceElement>
-                <CompetenceElement name="CE-Build"></CompetenceElement>
+                <CompetenceElement name="CE-ReadyToBuild"></CompetenceElement>
             </CompetenceElements>
         </Competence>
     </Competences>
@@ -86,11 +92,35 @@
             <Conditions>
             </Conditions>
         </DriveElement>
-        <DriveElement name="DE-GoHome" triggers ="GoHome" checkTime ="1">
+        <DriveElement name="DE-HasHome" triggers ="GoHome" checkTime ="1">
             <Conditions>
             </Conditions>
         </DriveElement>
         <DriveElement name="DE-IsHome" triggers ="C-Procreate" checkTime ="1">
+            <Conditions>
+            </Conditions>
+        </DriveElement>
+        <DriveElement name="DE-GoGetFood" triggers ="GoToNearestFood" checkTime ="1">
+            <Conditions>
+            </Conditions>
+        </DriveElement>
+        <DriveElement name="DE-HasFood" triggers ="EatFood" checkTime ="1">
+            <Conditions>
+            </Conditions>
+        </DriveElement>
+        <DriveElement name="DE-HasNoRocks" triggers ="GoGetRock" checkTime ="1">
+            <Conditions>
+            </Conditions>
+        </DriveElement>
+        <DriveElement name="DE-HasRocks" triggers ="GoNearestBridgeSite" checkTime ="1">
+            <Conditions>
+            </Conditions>
+        </DriveElement>
+        <DriveElement name="DE-ReadyToBuild" triggers ="BuildBridge" checkTime ="1">
+            <Conditions>
+            </Conditions>
+        </DriveElement>
+        <DriveElement name="DE-DoesNotHaveHome" triggers ="C-BuildHome" checkTime ="1">
             <Conditions>
             </Conditions>
         </DriveElement>
@@ -108,16 +138,17 @@
             <Conditions>
             </Conditions>
             <DriveElements>
-                <DriveElement name="DE-FoodExists"></DriveElement>
-                <DriveElement name="DE-FoodDoesNotExist"></DriveElement>
+                <DriveElement name="DE-HasFood"></DriveElement>
+                <DriveElement name="DE-GoGetFood"></DriveElement>
             </DriveElements>
         </Drive>
         <Drive name="D-BuildBridges">
             <Conditions>
             </Conditions>
             <DriveElements>
-                <DriveElement name="DE-BuildBridges"></DriveElement>
-                <DriveElement name="DE-BridgesAllBuilt"></DriveElement>
+                <DriveElement name="DE-HasRocks"></DriveElement>
+                <DriveElement name="DE-HasNoRocks"></DriveElement>
+                <DriveElement name="DE-ReadyToBuild"></DriveElement>
             </DriveElements>
         </Drive>
         <Drive name="D-BuildHome">
@@ -125,14 +156,15 @@
             </Conditions>
             <DriveElements>
                 <DriveElement name="DE-BuildHome"></DriveElement>
-                <DriveElement name="DE-GoHome"></DriveElement>
+                <DriveElement name="DE-HasHome"></DriveElement>
             </DriveElements>
         </Drive>
         <Drive name="D-Procreate">
             <Conditions>
             </Conditions>
             <DriveElements>
-                <DriveElement name="DE-GoHome"></DriveElement>
+                <DriveElement name="DE-DoesNotHaveHome"></DriveElement>
+                <DriveElement name="DE-HasHome"></DriveElement>
                 <DriveElement name="DE-IsHome"></DriveElement>
             </DriveElements>
         </Drive>

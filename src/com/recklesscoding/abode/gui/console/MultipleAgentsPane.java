@@ -17,11 +17,6 @@ public class MultipleAgentsPane extends BorderPaneWrapper {
         initOutput();
     }
 
-    private void initAgentChooser() {
-
-    }
-
-
     private void initOutput() {
         output.setWrapText(true);
         output.setEditable(false);
@@ -32,7 +27,7 @@ public class MultipleAgentsPane extends BorderPaneWrapper {
     }
 
     private void initLayout() {
-        setTop(agentNumberComboBox);
+  //      setTop(agentNumberComboBox);
         setCenter(output);
         setBottom(input);
     }

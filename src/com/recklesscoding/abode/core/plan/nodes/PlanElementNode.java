@@ -1,7 +1,11 @@
 package com.recklesscoding.abode.core.plan.nodes;
 
-import com.recklesscoding.abode.core.plan.nodes.plannodes.*;
+import com.recklesscoding.abode.core.plan.nodes.plannodes.ActionNode;
+import com.recklesscoding.abode.core.plan.nodes.plannodes.ActionPatternNode;
+import com.recklesscoding.abode.core.plan.nodes.plannodes.DriveCollectionNode;
+import com.recklesscoding.abode.core.plan.nodes.plannodes.RouteElementNode;
 import com.recklesscoding.abode.core.plan.planelements.PlanElement;
+import javafx.application.Platform;
 import javafx.scene.Node;
 import javafx.scene.effect.Glow;
 import javafx.scene.layout.Pane;
@@ -61,13 +65,17 @@ public class PlanElementNode extends Pane {
         List<PlanElement> planElements = new ArrayList<>();
         planElements.add(this.planElement);
         PlanElementNode planNode = this;
-        if (!((planNode instanceof DriveElementNode) || (planNode instanceof DriveCollectionNode))) {
+
+        if (!(planNode instanceof DriveCollectionNode)) {
             while (((planNode = planNode.getNodeParent()) != null)) {
                 if (planNode instanceof RouteElementNode) {
                     isCorrectElement = true;
                     break;
                 } else {
                     if (!planNode.getPlanElement().isSetToUpdate() && !(planNode instanceof ActionPatternNode)) {
+                        isCorrectElement = false;
+                        break;
+                    } else if (!planNode.getPlanElement().isSetToUpdate()) {
                         isCorrectElement = false;
                         break;
                     } else if (planNode instanceof ActionPatternNode) {
@@ -86,14 +94,16 @@ public class PlanElementNode extends Pane {
         if (isCorrectElement) {
             setGlow(true);
 
-            if (this instanceof ActionNode) {
-                if (this.getNodeParent() instanceof ActionPatternNode) {
-                    ((ActionPatternNode) this.getNodeParent()).activate();
+            Platform.runLater(() -> {
+                if (this instanceof ActionNode) {
+                    if (this.getNodeParent() instanceof ActionPatternNode) {
+                        ((ActionPatternNode) this.getNodeParent()).activate();
+                    }
+                    for (PlanElement planElement : planElements) {
+                        planElement.setFinishUpdate();
+                    }
                 }
-                for (PlanElement planElement : planElements) {
-                    planElement.setFinishUpdate();
-                }
-            }
+            });
         }
     }
 
@@ -168,7 +178,7 @@ public class PlanElementNode extends Pane {
         if (increase) {
             glowLevel = glowLevel + 0.3;
         } else {
-            glowLevel = glowLevel - 0.1 ;
+            glowLevel = glowLevel - 0.1;
         }
         if (glowLevel > 1) {
             glow.setLevel(1);

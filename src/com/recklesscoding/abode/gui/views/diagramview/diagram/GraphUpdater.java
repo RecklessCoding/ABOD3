@@ -7,7 +7,7 @@ package com.recklesscoding.abode.gui.views.diagramview.diagram;
 public class GraphUpdater implements Runnable {
 
     // In MS.
-    private long decreaseGlowTimer = 1000;
+    private long decreaseGlowTimer = 300;
 
     private boolean isRunning = false;
 
