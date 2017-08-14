@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ABOD3.jnlp">
+  <information>
+    <title>ABOD3</title>
+    <vendor>Unknown</vendor>
+    <description>ABOD3</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="ABOD3.jar" size="30770042" download="eager" />
+    <jar href="bundles\ABOD3.jar" size="188700" download="eager" />
+    <jar href="bundles\ABOD3\app\ABOD3.jar" size="188700" download="eager" />
+    <jar href="bundles\ABOD3\runtime\lib\charsets.jar" size="3088303" download="eager" />
+    <jar href="bundles\ABOD3\runtime\lib\ext\access-bridge-64.jar" size="187735" download="eager" />
+    <jar href="bundles\ABOD3\runtime\lib\ext\cldrdata.jar" size="3860522" download="eager" />
+    <jar href="bundles\ABOD3\runtime\lib\ext\dnsns.jar" size="8286" download="eager" />
+    <jar href="bundles\ABOD3\runtime\lib\ext\jaccess.jar" size="44516" download="eager" />
+    <jar href="bundles\ABOD3\runtime\lib\ext\jfxrt.jar" size="18158622" download="eager" />
+    <jar href="bundles\ABOD3\runtime\lib\ext\localedata.jar" size="2246691" download="eager" />
+    <jar href="bundles\ABOD3\runtime\lib\ext\nashorn.jar" size="2028225" download="eager" />
+    <jar href="bundles\ABOD3\runtime\lib\ext\sunec.jar" size="39771" download="eager" />
+    <jar href="bundles\ABOD3\runtime\lib\ext\sunjce_provider.jar" size="278718" download="eager" />
+    <jar href="bundles\ABOD3\runtime\lib\ext\sunmscapi.jar" size="32701" download="eager" />
+    <jar href="bundles\ABOD3\runtime\lib\ext\sunpkcs11.jar" size="250826" download="eager" />
+    <jar href="bundles\ABOD3\runtime\lib\ext\zipfs.jar" size="68849" download="eager" />
+    <jar href="bundles\ABOD3\runtime\lib\javaws.jar" size="936932" download="eager" />
+    <jar href="bundles\ABOD3\runtime\lib\jce.jar" size="114950" download="eager" />
+    <jar href="bundles\ABOD3\runtime\lib\jfr.jar" size="560452" download="eager" />
+    <jar href="bundles\ABOD3\runtime\lib\jfxswt.jar" size="33932" download="eager" />
+    <jar href="bundles\ABOD3\runtime\lib\jsse.jar" size="631447" download="eager" />
+    <jar href="bundles\ABOD3\runtime\lib\management-agent.jar" size="381" download="eager" />
+    <jar href="bundles\ABOD3\runtime\lib\plugin.jar" size="1924829" download="eager" />
+    <jar href="bundles\ABOD3\runtime\lib\resources.jar" size="3489258" download="eager" />
+    <jar href="bundles\ABOD3\runtime\lib\rt.jar" size="63265893" download="eager" />
+    <jar href="bundles\ABOD3\runtime\lib\security\US_export_policy.jar" size="3026" download="eager" />
+    <jar href="bundles\ABOD3\runtime\lib\security\local_policy.jar" size="3527" download="eager" />
+  </resources>
+<security>
+  <all-permissions/>
+</security>
+  <jfx:javafx-desc  width="600" height="400" main-class="com.recklesscoding.abode.Main"  name="ABOD3" />
+  <update check="background"/>
+</jnlp>

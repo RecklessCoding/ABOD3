@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ABODE_EditorII.jnlp">
+  <information>
+    <title>ABODEv3</title>
+    <vendor>Unknown</vendor>
+    <description>ABODE_EditorII</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="ABODE_EditorII.jar" size="130912" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="1024" height="720" main-class="uk.ac.bath.cs.abode.Main"  name="ABODE_EditorII" />
+  <update check="background"/>
+</jnlp>

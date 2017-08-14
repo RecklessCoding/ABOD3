@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.recklesscoding.abode</OriginalElement>
+  <nodes>
+    <node x="891.0" y="1630.0">com.recklesscoding.abode.plan.Plan</node>
+    <node x="1317.0" y="681.0">com.recklesscoding.abode.gui.views.drivescollectionsview.DrivesCollectionLayout</node>
+    <node x="333.75" y="581.5">com.recklesscoding.abode.plan.planelements.drives.DriveElement</node>
+    <node x="1761.0" y="2626.0">com.recklesscoding.abode.gui.views.diagramview.diagram.layout.RandomLayout</node>
+    <node x="911.0" y="1125.0">com.recklesscoding.abode.debugger.prerecorded.LogReader</node>
+    <node x="2094.875" y="179.0">com.recklesscoding.abode.gui.views.diagramview.DiagramViewLayout</node>
+    <node x="2280.0" y="3074.0">com.recklesscoding.abode.gui.views.diagramview.diagram.layout.PlanNodesLayout</node>
+    <node x="3098.375" y="799.0">com.recklesscoding.abode.debugger.realtime.GenericSocket.SetupThread</node>
+    <node x="589.0" y="2351.0">com.recklesscoding.abode.gui.views.competencesview.CompetenceTree</node>
+    <node x="2654.75" y="2115.0">com.recklesscoding.abode.debugger.prerecorded.LogSynchronizer</node>
+    <node x="2640.0" y="3074.0">com.recklesscoding.abode.plan.planelements.ITriggable</node>
+    <node x="1917.0" y="424.0">com.recklesscoding.abode.gui.views.actionpatternsview.ActionPatternsLayout</node>
+    <node x="1739.875" y="79.0">com.recklesscoding.abode.gui.layout.TabLayout</node>
+    <node x="1359.0" y="1630.0">com.recklesscoding.abode.gui.videoplayer.VideoPlayerWindow</node>
+    <node x="1009.0" y="324.0">com.recklesscoding.abode.plan.planelements.competence.Competence</node>
+    <node x="0.0" y="2340.0">com.recklesscoding.abode.gui.views.actionpatternsview.ActionPatternsTree</node>
+    <node x="905.0" y="2694.5">com.recklesscoding.abode.gui.menu.mainmenu.debugmenu</node>
+    <node x="179.0" y="816.0">com.recklesscoding.abode.plan.planelements.action.ActionPattern</node>
+    <node x="2763.0" y="1630.0">com.recklesscoding.abode.gui.views.diagramview.diagram.NodesHolderHelper</node>
+    <node x="598.75" y="537.0">com.recklesscoding.abode.plan.planelements.drives.DriveCollection</node>
+    <node x="3404.75" y="2115.0">com.recklesscoding.abode.plan.reader.lap.builders.CompetencesBuilder</node>
+    <node x="1961.0" y="1512.0">com.recklesscoding.abode.gui.views.diagramview.diagram.nodes.plannodes.DriveCollectionNode</node>
+    <node x="489.99999999999994" y="2955.0">com.recklesscoding.abode.gui.views.competencesview.CompetencesViewTab</node>
+    <node x="847.0" y="2329.0">com.recklesscoding.abode.gui.views.logicalview.LogicalViewTree</node>
+    <node x="0.0" y="872.0">com.recklesscoding.abode.plan.planelements.action.ActionEvent</node>
+    <node x="2717.0" y="1512.0">com.recklesscoding.abode.gui.views.diagramview.diagram.nodes.plannodes.DriveNode</node>
+    <node x="288.00000000000006" y="2340.0">com.recklesscoding.abode.gui.views.drivescollectionsview.DrivesCollectionsTree</node>
+    <node x="493.0" y="357.5">com.recklesscoding.abode.plan.planelements.TriggerableElement</node>
+    <node x="1495.0" y="1512.0">com.recklesscoding.abode.gui.views.diagramview.diagram.nodes.plannodes.ActionPatternNode</node>
+    <node x="498.49999999999994" y="2808.0">com.recklesscoding.abode.gui.layout.EditorViewTab</node>
+    <node x="1177.0" y="3074.0">com.recklesscoding.abode.plan.reader.lap.builders.PlanElementsBuilder</node>
+    <node x="2980.875" y="0.0">com.recklesscoding.abode.debugger.realtime.ISocketListener</node>
+    <node x="1165.0" y="2115.0">com.recklesscoding.abode.wrappers.VBoxWrapper</node>
+    <node x="361.99999999999994" y="1226.0">com.recklesscoding.abode.plan.reader.inst.InstPlanReader</node>
+    <node x="0.0" y="1269.5">com.recklesscoding.abode.plan.reader.lap.LapPlanReader</node>
+    <node x="1454.0" y="2615.0">com.recklesscoding.abode.gui.views.diagramview.diagram.layout.PlanHorizontalLayout</node>
+    <node x="2470.0" y="1512.0">com.recklesscoding.abode.gui.views.diagramview.diagram.nodes.plannodes.CompetenceNode</node>
+    <node x="1200.75" y="2260.0">com.recklesscoding.abode.gui.EditorLayout</node>
+    <node x="821.0" y="1280.5">com.recklesscoding.abode.debugger.prerecorded.InstictLogReader</node>
+    <node x="954.75" y="592.0">com.recklesscoding.abode.plan.planelements.competence.CompetenceElement</node>
+    <node x="2948.0" y="1024.0">com.recklesscoding.abode.gui.views.diagramview.diagram.NodesHolder</node>
+    <node x="2451.0" y="3074.0">com.recklesscoding.abode.wrappers.ListViewItemWrapper</node>
+    <node x="969.0" y="2955.0">com.recklesscoding.abode.gui.views.drivescollectionsview.DrivesCollectionsViewTab</node>
+    <node x="2313.0" y="1630.0">com.recklesscoding.abode.gui.views.diagramview.diagram.GraphWindow</node>
+    <node x="1943.75" y="2239.0">com.recklesscoding.abode.gui.layout.TabComponent</node>
+    <node x="659.0" y="3074.0">com.recklesscoding.abode.gui.trees.TreeItemWrapper</node>
+    <node x="2221.0" y="1512.0">com.recklesscoding.abode.gui.views.diagramview.diagram.nodes.plannodes.DriveElementNode</node>
+    <node x="1385.0" y="2137.0">com.recklesscoding.abode.gui.views.editorlayout.IEditorLayout</node>
+    <node x="635.0" y="2672.0">com.recklesscoding.abode.gui.menu.mainmenu.filemenu.FileMenu</node>
+    <node x="3270.0" y="2808.0">com.recklesscoding.abode.Main</node>
+    <node x="945.0" y="3074.0">com.recklesscoding.abode.wrappers.BooleanComboBox</node>
+    <node x="2415.875" y="145.0">com.recklesscoding.abode.gui.views.logicalview.LogicalViewLayout</node>
+    <node x="1992.25" y="2115.0">com.recklesscoding.abode.wrappers.TabPaneWrapper</node>
+    <node x="1758.0" y="725.0">com.recklesscoding.abode.gui.views.competencesview.CompetenceLayout</node>
+    <node x="209.99999999999994" y="2955.0">com.recklesscoding.abode.gui.views.diagramview.DiagramTab</node>
+    <node x="1593.0" y="3074.0">com.recklesscoding.abode.wrappers.ListViewWrapper</node>
+    <node x="1825.0" y="1630.0">com.recklesscoding.abode.plan.reader.lap.builders.ElementBuilder</node>
+    <node x="2693.0" y="2808.0">com.recklesscoding.abode.gui.videoplayer.VideoPlayerView</node>
+    <node x="3004.0" y="2808.0">com.recklesscoding.abode.gui.menu.mainmenu.viewmenu.MenuButtonToggleFullScreen</node>
+    <node x="2048.0" y="2615.0">com.recklesscoding.abode.gui.views.diagramview.diagram.layout.PlanVerticalLayout</node>
+    <node x="1856.5" y="1024.0">com.recklesscoding.abode.gui.views.diagramview.diagram.nodes.PlanElementNode</node>
+    <node x="1227.5" y="2808.0">com.recklesscoding.abode.gui.menu.wrappers.MenuBarWrapper</node>
+    <node x="474.0" y="1630.0">com.recklesscoding.abode.gui.views.diagramview.diagram.controller.ZoomableScrollPane</node>
+    <node x="2085.0" y="3074.0">com.recklesscoding.abode.gui.menu.mainmenu.filemenu.MenuButtonExit</node>
+    <node x="433.25" y="2115.0">com.recklesscoding.abode.gui.trees.PlanTree</node>
+    <node x="750.0" y="357.5">com.recklesscoding.abode.plan.planelements.Sense</node>
+    <node x="1184.0" y="2909.0">com.recklesscoding.abode.gui.menu.mainmenu.MainMenuBar</node>
+    <node x="1069.0" y="2661.0">com.recklesscoding.abode.gui.menu.mainmenu.filemenu.MenuButtonOpenPlan</node>
+    <node x="0.0" y="2966.5">com.recklesscoding.abode.gui.layout.LogicalViewTab</node>
+    <node x="0.0" y="1630.0">com.recklesscoding.abode.gui.views.diagramview.diagram.controller.MouseGestures</node>
+    <node x="1530.0" y="2808.0">com.recklesscoding.abode.Editor</node>
+    <node x="2471.0" y="2808.0">com.recklesscoding.abode.gui.views.diagramview.diagram.nodes.NodesConnector</node>
+    <node x="521.1249999999999" y="1024.0">com.recklesscoding.abode.util.IReader</node>
+    <node x="2259.75" y="2115.0">com.recklesscoding.abode.gui.views.diagramview.diagram.DiagramView</node>
+    <node x="1555.75" y="2115.0">com.recklesscoding.abode.plan.reader.lap.builders.DriveCollectionBuilder</node>
+    <node x="0.0" y="2514.0">com.recklesscoding.abode.plan.reader.inst.builders.InstPlanReaderHelper</node>
+    <node x="2743.875" y="123.0">com.recklesscoding.abode.debugger.realtime.GenericSocket</node>
+    <node x="78.75" y="626.0">com.recklesscoding.abode.plan.planelements.action.ActionRelatedPlanElement</node>
+    <node x="1385.0" y="3074.0">com.recklesscoding.abode.gui.views.diagramview.diagram.layout.DiagramViewLayoutType</node>
+    <node x="338.0" y="3074.0">com.recklesscoding.abode.gui.menu.mainmenu.viewmenu.MenuButtonDiagramOrientation</node>
+    <node x="630.0" y="2514.5">com.recklesscoding.abode.gui.menu.wrappers.MenuWrapper</node>
+    <node x="3031.75" y="2115.0">com.recklesscoding.abode.gui.TextFieldTreeCellImpl</node>
+    <node x="1830.5" y="2514.0">com.recklesscoding.abode.gui.views.diagramview.diagram.layout.PlanLayout</node>
+    <node x="1867.0" y="3074.0">com.recklesscoding.abode.gui.videoplayer.MediaWrapper</node>
+    <node x="1538.0" y="380.0">com.recklesscoding.abode.gui.layout.HasGoalsTabLayout</node>
+    <node x="155.0" y="1997.0">com.recklesscoding.abode.gui.views.diagramview.diagram.controller.MouseGestures.DragContext</node>
+    <node x="569.5" y="1976.0">com.recklesscoding.abode.gui.views.diagramview.diagram.controller.ZoomableScrollPane.ZoomHandler</node>
+    <node x="2179.75" y="0.0">com.recklesscoding.abode.wrappers.FlowPaneWrapper</node>
+    <node x="2939.375" y="799.0">com.recklesscoding.abode.debugger.realtime.GenericSocket.SocketReaderThread</node>
+    <node x="1747.0" y="1512.0">com.recklesscoding.abode.gui.views.diagramview.diagram.nodes.plannodes.ActionNode</node>
+    <node x="1846.0" y="2808.0">com.recklesscoding.abode.gui.views.diagramview.diagram.GraphUpdater</node>
+    <node x="2183.0" y="2808.0">com.recklesscoding.abode.plan.reader.lap.builders.ActionPatternsBuilder</node>
+    <node x="1021.0416666666666" y="2514.0">com.recklesscoding.abode.gui.menu.menuitems.MenuButtonOpenFile</node>
+    <node x="2380.0" y="2514.0">com.recklesscoding.abode.debugger.Debugger</node>
+    <node x="446.0" y="2672.0">com.recklesscoding.abode.gui.menu.mainmenu.viewmenu.ViewMenu</node>
+    <node x="1205.0" y="1512.0">com.recklesscoding.abode.gui.views.diagramview.diagram.nodes.plannodes.CompetenceElementNode</node>
+    <node x="729.0" y="0.0">com.recklesscoding.abode.plan.planelements.PlanElement</node>
+    <node x="719.0" y="2955.0">com.recklesscoding.abode.gui.views.actionpatternsview.ActionPatternsViewTab</node>
+    <node x="296.74999999999994" y="1125.0">com.recklesscoding.abode.plan.reader.PlanReader</node>
+    <node x="0.0" y="3074.0">com.recklesscoding.abode.gui.menu.mainmenu.viewmenu.MenuButtonSettings</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.recklesscoding.abode.plan.planelements.Sense" target="com.recklesscoding.abode.plan.planelements.PlanElement">
+      <point x="0.0" y="-48.0" />
+      <point x="0.0" y="137.0" />
+    </edge>
+    <edge source="com.recklesscoding.abode.plan.planelements.action.ActionPattern" target="com.recklesscoding.abode.plan.planelements.action.ActionRelatedPlanElement">
+      <point x="0.0" y="-81.5" />
+      <point x="313.0" y="791.0" />
+      <point x="255.0" y="791.0" />
+      <point x="58.75" y="25.5" />
+    </edge>
+    <edge source="com.recklesscoding.abode.gui.menu.mainmenu.viewmenu.ViewMenu" target="com.recklesscoding.abode.gui.menu.wrappers.MenuWrapper">
+      <point x="0.0" y="-37.0" />
+      <point x="530.5" y="2636.0" />
+      <point x="673.3333333333334" y="2636.0" />
+      <point x="-86.66666666666663" y="48.0" />
+    </edge>
+    <edge source="com.recklesscoding.abode.plan.planelements.competence.CompetenceElement" target="com.recklesscoding.abode.plan.planelements.TriggerableElement">
+      <point x="0.0" y="-59.5" />
+      <point x="1035.75" y="507.0" />
+      <point x="700.375" y="507.0" />
+      <point x="88.875" y="48.0" />
+    </edge>
+    <edge source="com.recklesscoding.abode.gui.views.diagramview.diagram.nodes.plannodes.CompetenceElementNode" target="com.recklesscoding.abode.gui.views.diagramview.diagram.nodes.PlanElementNode">
+      <point x="0.0" y="-25.5" />
+      <point x="1340.0" y="1472.0" />
+      <point x="1888.5714285714287" y="1472.0" />
+      <point x="-192.42857142857133" y="214.0" />
+    </edge>
+    <edge source="com.recklesscoding.abode.gui.views.diagramview.diagram.controller.ZoomableScrollPane.ZoomHandler" target="com.recklesscoding.abode.gui.views.diagramview.diagram.controller.ZoomableScrollPane">
+      <point x="0.0" y="-25.5" />
+      <point x="0.0" y="148.0" />
+    </edge>
+    <edge source="com.recklesscoding.abode.gui.views.actionpatternsview.ActionPatternsTree" target="com.recklesscoding.abode.gui.trees.PlanTree">
+      <point x="0.0" y="-59.0" />
+      <point x="134.0" y="2299.0" />
+      <point x="467.0" y="2299.0" />
+      <point x="-101.25" y="82.0" />
+    </edge>
+    <edge source="com.recklesscoding.abode.plan.planelements.TriggerableElement" target="com.recklesscoding.abode.plan.planelements.PlanElement">
+      <point x="0.0" y="-48.0" />
+      <point x="611.5" y="299.0" />
+      <point x="775.8333333333334" y="299.0" />
+      <point x="-93.66666666666663" y="137.0" />
+    </edge>
+    <edge source="com.recklesscoding.abode.gui.views.diagramview.diagram.layout.RandomLayout" target="com.recklesscoding.abode.gui.views.diagramview.diagram.layout.PlanLayout">
+      <point x="0.0" y="-59.5" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="com.recklesscoding.abode.debugger.realtime.GenericSocket.SetupThread" target="com.recklesscoding.abode.debugger.realtime.GenericSocket">
+      <point x="0.0" y="-25.5" />
+      <point x="3150.875" y="774.0" />
+      <point x="3247.875" y="774.0" />
+      <point x="168.0" y="313.0" />
+    </edge>
+    <edge source="com.recklesscoding.abode.plan.planelements.drives.DriveCollection" target="com.recklesscoding.abode.plan.planelements.TriggerableElement">
+      <point x="0.0" y="-114.5" />
+      <point x="766.75" y="517.0" />
+      <point x="641.125" y="517.0" />
+      <point x="29.625" y="48.0" />
+    </edge>
+    <edge source="com.recklesscoding.abode.gui.views.diagramview.diagram.nodes.plannodes.ActionNode" target="com.recklesscoding.abode.gui.views.diagramview.diagram.nodes.PlanElementNode">
+      <point x="0.0" y="-25.5" />
+      <point x="1844.0" y="1492.0" />
+      <point x="2016.857142857143" y="1492.0" />
+      <point x="-64.14285714285711" y="214.0" />
+    </edge>
+    <edge source="com.recklesscoding.abode.debugger.realtime.GenericSocket.SocketReaderThread" target="com.recklesscoding.abode.debugger.realtime.GenericSocket">
+      <point x="0.0" y="-25.5" />
+      <point x="3008.875" y="774.0" />
+      <point x="2911.875" y="774.0" />
+      <point x="-168.0" y="313.0" />
+    </edge>
+    <edge source="com.recklesscoding.abode.gui.layout.TabLayout" target="com.recklesscoding.abode.wrappers.FlowPaneWrapper">
+      <point x="0.0" y="-125.5" />
+      <point x="1907.375" y="54.0" />
+      <point x="2201.0833333333335" y="54.0" />
+      <point x="-42.666666666666515" y="14.5" />
+    </edge>
+    <edge source="com.recklesscoding.abode.gui.views.drivescollectionsview.DrivesCollectionsTree" target="com.recklesscoding.abode.gui.trees.PlanTree">
+      <point x="-5.6843418860808015E-14" y="-59.0" />
+      <point x="428.5" y="2309.0" />
+      <point x="534.5" y="2309.0" />
+      <point x="-33.75" y="82.0" />
+    </edge>
+    <edge source="com.recklesscoding.abode.gui.layout.HasGoalsTabLayout" target="com.recklesscoding.abode.gui.layout.TabLayout">
+      <point x="0.0" y="-125.5" />
+      <point x="1717.5" y="355.0" />
+      <point x="1823.625" y="355.0" />
+      <point x="-83.75" y="125.5" />
+    </edge>
+    <edge source="com.recklesscoding.abode.plan.reader.PlanReader" target="com.recklesscoding.abode.util.IReader">
+      <point x="0.0" y="-25.5" />
+      <point x="376.24999999999994" y="1100.0" />
+      <point x="560.8749999999999" y="1100.0" />
+      <point x="-39.75" y="25.5" />
+    </edge>
+    <edge source="com.recklesscoding.abode.gui.menu.mainmenu.debugmenu" target="com.recklesscoding.abode.gui.menu.menuitems.MenuButtonOpenFile">
+      <point x="36.0" y="-14.5" />
+      <point x="1013.0" y="2636.0" />
+      <point x="1075.5416666666667" y="2636.0" />
+      <point x="-54.5" y="48.5" />
+    </edge>
+    <edge source="com.recklesscoding.abode.plan.planelements.action.ActionEvent" target="com.recklesscoding.abode.plan.planelements.action.ActionRelatedPlanElement">
+      <point x="0.0" y="-25.5" />
+      <point x="79.5" y="791.0" />
+      <point x="137.5" y="791.0" />
+      <point x="-58.75" y="25.5" />
+    </edge>
+    <edge source="com.recklesscoding.abode.plan.planelements.competence.Competence" target="com.recklesscoding.abode.plan.planelements.PlanElement">
+      <point x="0.0" y="-81.5" />
+      <point x="1140.5" y="299.0" />
+      <point x="963.1666666666667" y="299.0" />
+      <point x="93.66666666666674" y="137.0" />
+    </edge>
+    <edge source="com.recklesscoding.abode.gui.menu.mainmenu.filemenu.MenuButtonOpenPlan" target="com.recklesscoding.abode.gui.menu.menuitems.MenuButtonOpenFile">
+      <point x="0.0" y="-48.0" />
+      <point x="1239.0" y="2636.0" />
+      <point x="1184.5416666666665" y="2636.0" />
+      <point x="54.5" y="48.5" />
+    </edge>
+    <edge source="com.recklesscoding.abode.gui.views.drivescollectionsview.DrivesCollectionsViewTab" target="com.recklesscoding.abode.gui.layout.EditorViewTab">
+      <point x="0.0" y="-37.0" />
+      <point x="1054.0" y="2925.0" />
+      <point x="671.3" y="2925.0" />
+      <point x="76.80000000000007" y="48.5" />
+    </edge>
+    <edge source="com.recklesscoding.abode.gui.views.competencesview.CompetencesViewTab" target="com.recklesscoding.abode.gui.layout.EditorViewTab">
+      <point x="0.0" y="-37.0" />
+      <point x="0.0" y="48.5" />
+    </edge>
+    <edge source="com.recklesscoding.abode.debugger.realtime.GenericSocket" target="com.recklesscoding.abode.debugger.realtime.ISocketListener">
+      <point x="0.0" y="-313.0" />
+      <point x="0.0" y="36.5" />
+    </edge>
+    <edge source="com.recklesscoding.abode.debugger.prerecorded.LogReader" target="com.recklesscoding.abode.util.IReader">
+      <point x="0.0" y="-25.5" />
+      <point x="990.5" y="1100.0" />
+      <point x="640.3749999999999" y="1100.0" />
+      <point x="39.75" y="25.5" />
+    </edge>
+    <edge source="com.recklesscoding.abode.gui.layout.LogicalViewTab" target="com.recklesscoding.abode.gui.layout.EditorViewTab">
+      <point x="0.0" y="-25.5" />
+      <point x="95.0" y="2925.0" />
+      <point x="517.7" y="2925.0" />
+      <point x="-76.79999999999995" y="48.5" />
+    </edge>
+    <edge source="com.recklesscoding.abode.debugger.prerecorded.InstictLogReader" target="com.recklesscoding.abode.debugger.prerecorded.LogReader">
+      <point x="0.0" y="-125.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="com.recklesscoding.abode.gui.views.diagramview.diagram.nodes.plannodes.DriveNode" target="com.recklesscoding.abode.gui.views.diagramview.diagram.nodes.PlanElementNode">
+      <point x="0.0" y="-25.5" />
+      <point x="2810.0" y="1472.0" />
+      <point x="2273.4285714285716" y="1472.0" />
+      <point x="192.42857142857156" y="214.0" />
+    </edge>
+    <edge source="com.recklesscoding.abode.plan.planelements.drives.DriveElement" target="com.recklesscoding.abode.plan.planelements.TriggerableElement">
+      <point x="0.0" y="-70.0" />
+      <point x="456.25" y="517.0" />
+      <point x="581.875" y="517.0" />
+      <point x="-29.625" y="48.0" />
+    </edge>
+    <edge source="com.recklesscoding.abode.gui.views.diagramview.diagram.nodes.plannodes.DriveCollectionNode" target="com.recklesscoding.abode.gui.views.diagramview.diagram.nodes.PlanElementNode">
+      <point x="0.0" y="-25.5" />
+      <point x="0.0" y="214.0" />
+    </edge>
+    <edge source="com.recklesscoding.abode.gui.menu.mainmenu.MainMenuBar" target="com.recklesscoding.abode.gui.menu.wrappers.MenuBarWrapper">
+      <point x="0.0" y="-59.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="com.recklesscoding.abode.gui.menu.mainmenu.debugmenu" target="com.recklesscoding.abode.gui.menu.wrappers.MenuWrapper">
+      <point x="-36.0" y="-14.5" />
+      <point x="941.0" y="2636.0" />
+      <point x="846.6666666666667" y="2636.0" />
+      <point x="86.66666666666674" y="48.0" />
+    </edge>
+    <edge source="com.recklesscoding.abode.gui.views.logicalview.LogicalViewLayout" target="com.recklesscoding.abode.wrappers.FlowPaneWrapper">
+      <point x="0.0" y="-59.5" />
+      <point x="2557.375" y="54.0" />
+      <point x="2286.4166666666665" y="54.0" />
+      <point x="42.666666666666515" y="14.5" />
+    </edge>
+    <edge source="com.recklesscoding.abode.gui.views.diagramview.diagram.nodes.plannodes.DriveElementNode" target="com.recklesscoding.abode.gui.views.diagramview.diagram.nodes.PlanElementNode">
+      <point x="0.0" y="-25.5" />
+      <point x="2335.5" y="1492.0" />
+      <point x="2145.1428571428573" y="1492.0" />
+      <point x="64.14285714285734" y="214.0" />
+    </edge>
+    <edge source="com.recklesscoding.abode.gui.layout.TabComponent" target="com.recklesscoding.abode.wrappers.TabPaneWrapper">
+      <point x="0.0" y="-70.5" />
+      <point x="0.0" y="37.0" />
+    </edge>
+    <edge source="com.recklesscoding.abode.gui.views.competencesview.CompetenceTree" target="com.recklesscoding.abode.gui.trees.PlanTree">
+      <point x="0.0" y="-48.0" />
+      <point x="708.0" y="2309.0" />
+      <point x="602.0" y="2309.0" />
+      <point x="33.75" y="82.0" />
+    </edge>
+    <edge source="com.recklesscoding.abode.gui.views.drivescollectionsview.DrivesCollectionLayout" target="com.recklesscoding.abode.gui.layout.HasGoalsTabLayout">
+      <point x="0.0" y="-103.5" />
+      <point x="1527.5" y="656.0" />
+      <point x="1627.75" y="656.0" />
+      <point x="-89.75" y="125.5" />
+    </edge>
+    <edge source="com.recklesscoding.abode.gui.views.diagramview.diagram.layout.PlanVerticalLayout" target="com.recklesscoding.abode.gui.views.diagramview.diagram.layout.PlanLayout">
+      <point x="0.0" y="-70.5" />
+      <point x="2191.5" y="2590.0" />
+      <point x="1937.1666666666667" y="2590.0" />
+      <point x="42.66666666666674" y="25.5" />
+    </edge>
+    <edge source="com.recklesscoding.abode.gui.views.actionpatternsview.ActionPatternsViewTab" target="com.recklesscoding.abode.gui.layout.EditorViewTab">
+      <point x="0.0" y="-37.0" />
+      <point x="834.0" y="2935.0" />
+      <point x="632.9000000000001" y="2935.0" />
+      <point x="38.40000000000009" y="48.5" />
+    </edge>
+    <edge source="com.recklesscoding.abode.plan.reader.lap.LapPlanReader" target="com.recklesscoding.abode.plan.reader.PlanReader">
+      <point x="0.0" y="-136.0" />
+      <point x="171.0" y="1201.0" />
+      <point x="336.49999999999994" y="1201.0" />
+      <point x="-39.75" y="25.5" />
+    </edge>
+    <edge source="com.recklesscoding.abode.plan.reader.inst.InstPlanReader" target="com.recklesscoding.abode.plan.reader.PlanReader">
+      <point x="0.0" y="-179.5" />
+      <point x="581.5" y="1201.0" />
+      <point x="415.99999999999994" y="1201.0" />
+      <point x="39.75" y="25.5" />
+    </edge>
+    <edge source="com.recklesscoding.abode.gui.views.competencesview.CompetenceLayout" target="com.recklesscoding.abode.gui.layout.HasGoalsTabLayout">
+      <point x="0.0" y="-59.5" />
+      <point x="1907.5" y="656.0" />
+      <point x="1807.25" y="656.0" />
+      <point x="89.75" y="125.5" />
+    </edge>
+    <edge source="com.recklesscoding.abode.gui.EditorLayout" target="com.recklesscoding.abode.gui.views.editorlayout.IEditorLayout">
+      <point x="77.5" y="-103.5" />
+      <point x="1433.25" y="2235.0" />
+      <point x="1446.5" y="2235.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="com.recklesscoding.abode.gui.views.logicalview.LogicalViewTree" target="com.recklesscoding.abode.gui.trees.PlanTree">
+      <point x="0.0" y="-70.0" />
+      <point x="983.5" y="2299.0" />
+      <point x="669.5" y="2299.0" />
+      <point x="101.25" y="82.0" />
+    </edge>
+    <edge source="com.recklesscoding.abode.gui.views.actionpatternsview.ActionPatternsLayout" target="com.recklesscoding.abode.gui.layout.TabLayout">
+      <point x="0.0" y="-81.5" />
+      <point x="2094.0" y="355.0" />
+      <point x="1991.125" y="355.0" />
+      <point x="83.75" y="125.5" />
+    </edge>
+    <edge source="com.recklesscoding.abode.gui.views.diagramview.diagram.controller.MouseGestures.DragContext" target="com.recklesscoding.abode.gui.views.diagramview.diagram.controller.MouseGestures">
+      <point x="0.0" y="-36.5" />
+      <point x="0.0" y="158.5" />
+    </edge>
+    <edge source="com.recklesscoding.abode.gui.views.diagramview.DiagramViewLayout" target="com.recklesscoding.abode.wrappers.FlowPaneWrapper">
+      <point x="0.0" y="-25.5" />
+      <point x="2245.375" y="54.0" />
+      <point x="2243.75" y="54.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.recklesscoding.abode.gui.views.diagramview.diagram.nodes.plannodes.ActionPatternNode" target="com.recklesscoding.abode.gui.views.diagramview.diagram.nodes.PlanElementNode">
+      <point x="0.0" y="-25.5" />
+      <point x="1611.0" y="1482.0" />
+      <point x="1952.7142857142858" y="1482.0" />
+      <point x="-128.28571428571422" y="214.0" />
+    </edge>
+    <edge source="com.recklesscoding.abode.gui.menu.mainmenu.filemenu.FileMenu" target="com.recklesscoding.abode.gui.menu.wrappers.MenuWrapper">
+      <point x="0.0" y="-37.0" />
+      <point x="0.0" y="48.0" />
+    </edge>
+    <edge source="com.recklesscoding.abode.plan.planelements.action.ActionRelatedPlanElement" target="com.recklesscoding.abode.plan.planelements.TriggerableElement">
+      <point x="0.0" y="-25.5" />
+      <point x="196.25" y="507.0" />
+      <point x="522.625" y="507.0" />
+      <point x="-88.875" y="48.0" />
+    </edge>
+    <edge source="com.recklesscoding.abode.gui.views.diagramview.DiagramTab" target="com.recklesscoding.abode.gui.layout.EditorViewTab">
+      <point x="0.0" y="-37.0" />
+      <point x="339.99999999999994" y="2935.0" />
+      <point x="556.0999999999999" y="2935.0" />
+      <point x="-38.39999999999998" y="48.5" />
+    </edge>
+    <edge source="com.recklesscoding.abode.gui.views.diagramview.diagram.layout.PlanHorizontalLayout" target="com.recklesscoding.abode.gui.views.diagramview.diagram.layout.PlanLayout">
+      <point x="0.0" y="-70.5" />
+      <point x="1597.5" y="2590.0" />
+      <point x="1851.8333333333333" y="2590.0" />
+      <point x="-42.66666666666674" y="25.5" />
+    </edge>
+    <edge source="com.recklesscoding.abode.gui.EditorLayout" target="com.recklesscoding.abode.wrappers.VBoxWrapper">
+      <point x="-77.5" y="-103.5" />
+      <point x="1278.25" y="2235.0" />
+      <point x="1265.0" y="2235.0" />
+      <point x="0.0" y="47.5" />
+    </edge>
+    <edge source="com.recklesscoding.abode.gui.views.diagramview.diagram.nodes.plannodes.CompetenceNode" target="com.recklesscoding.abode.gui.views.diagramview.diagram.nodes.PlanElementNode">
+      <point x="0.0" y="-25.5" />
+      <point x="2583.5" y="1482.0" />
+      <point x="2209.285714285714" y="1482.0" />
+      <point x="128.28571428571422" y="214.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="1275.5" y="273.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

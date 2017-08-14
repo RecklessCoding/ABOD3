@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_abode_editorii" default="compile.module.abode_editorii">
+  <dirname property="module.abode_editorii.basedir" file="${ant.file.module_abode_editorii}"/>
+  
+  <property name="module.jdk.home.abode_editorii" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.abode_editorii" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.abode_editorii" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.abode_editorii" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="abode_editorii.output.dir" value="${module.abode_editorii.basedir}/out/production/ABODE_EditorII"/>
+  <property name="abode_editorii.testoutput.dir" value="${module.abode_editorii.basedir}/out/test/ABODE_EditorII"/>
+  
+  <path id="abode_editorii.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="abode_editorii.module.production.classpath">
+    <path refid="${module.jdk.classpath.abode_editorii}"/>
+  </path>
+  
+  <path id="abode_editorii.runtime.production.module.classpath">
+    <pathelement location="${abode_editorii.output.dir}"/>
+  </path>
+  
+  <path id="abode_editorii.module.classpath">
+    <path refid="${module.jdk.classpath.abode_editorii}"/>
+    <pathelement location="${abode_editorii.output.dir}"/>
+  </path>
+  
+  <path id="abode_editorii.runtime.module.classpath">
+    <pathelement location="${abode_editorii.testoutput.dir}"/>
+    <pathelement location="${abode_editorii.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.abode_editorii">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.abode_editorii">
+    <patternset refid="excluded.from.module.abode_editorii"/>
+  </patternset>
+  
+  <path id="abode_editorii.module.sourcepath">
+    <dirset dir="${module.abode_editorii.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.abode_editorii" depends="compile.module.abode_editorii.production,compile.module.abode_editorii.tests" description="Compile module ABODE_EditorII"/>
+  
+  <target name="compile.module.abode_editorii.production" depends="register.custom.compilers" description="Compile module ABODE_EditorII; production classes">
+    <mkdir dir="${abode_editorii.output.dir}"/>
+    <javac2 destdir="${abode_editorii.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.abode_editorii}/javac">
+      <compilerarg line="${compiler.args.abode_editorii}"/>
+      <bootclasspath refid="abode_editorii.module.bootclasspath"/>
+      <classpath refid="abode_editorii.module.production.classpath"/>
+      <src refid="abode_editorii.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.abode_editorii"/>
+    </javac2>
+    
+    <copy todir="${abode_editorii.output.dir}">
+      <fileset dir="${module.abode_editorii.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.abode_editorii.tests" depends="register.custom.compilers,compile.module.abode_editorii.production" description="compile module ABODE_EditorII; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.abode_editorii" description="cleanup module">
+    <delete dir="${abode_editorii.output.dir}"/>
+    <delete dir="${abode_editorii.testoutput.dir}"/>
+  </target>
+</project>

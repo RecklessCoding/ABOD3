@@ -1,0 +1,5 @@
+.popover{
+    -fx-border-style: solid, segments(1, 1);
+    -fx-background-color: #1d1d1d;
+    -fx-border-color: linear-gradient(to top right, #006c72, #262626);
+}
