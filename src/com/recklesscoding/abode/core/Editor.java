@@ -1,6 +1,7 @@
 package com.recklesscoding.abode.core;
 
 import com.recklesscoding.abode.core.plan.reader.xposh.XPOSHPlanReader;
+import com.recklesscoding.abode.core.plan.writer.XMLPOSHPlanWriter;
 import com.recklesscoding.abode.debugger.InsinctDebugger;
 import com.recklesscoding.abode.debugger.IDebugger;
 import com.recklesscoding.abode.debugger.UnityPOSHDebugger;
@@ -9,7 +10,7 @@ import com.recklesscoding.abode.core.plan.Plan;
 import com.recklesscoding.abode.core.plan.reader.PlanReader;
 import com.recklesscoding.abode.core.plan.reader.inst.InstPlanReader;
 import com.recklesscoding.abode.core.plan.reader.lap.LapPlanReader;
-import com.recklesscoding.abode.gui.views.diagramview.diagram.saving.LapPlanWriter;
+import com.recklesscoding.abode.core.plan.writer.LapPlanWriter;
 import javafx.stage.Stage;
 
 /**
@@ -69,7 +70,7 @@ public class Editor {
     }
 
     public void savePlan(String file) {
-        new LapPlanWriter().writeFile(file);
+        new XMLPOSHPlanWriter().writeFile(file);
         refreshLayout();
     }
 

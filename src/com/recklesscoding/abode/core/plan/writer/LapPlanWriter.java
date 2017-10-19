@@ -1,4 +1,4 @@
-package com.recklesscoding.abode.gui.views.diagramview.diagram.saving;
+package com.recklesscoding.abode.core.plan.writer;
 
 import com.recklesscoding.abode.core.plan.Plan;
 import com.recklesscoding.abode.core.plan.planelements.Sense;

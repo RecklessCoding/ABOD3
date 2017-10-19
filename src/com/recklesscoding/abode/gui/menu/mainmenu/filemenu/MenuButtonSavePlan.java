@@ -32,7 +32,7 @@ public class MenuButtonSavePlan extends MenuButtonFileHandler {
     protected  void initFileChooser() {
         getFileChooser().setTitle("Open Video File");
         getFileChooser().getExtensionFilters().addAll(new FileChooser.ExtensionFilter("All files", "*.*"),
-                new FileChooser.ExtensionFilter("Lap", "*.lap"));
+                new FileChooser.ExtensionFilter("XML", "*.xml"));
         getFileChooser().setSelectedExtensionFilter(getFileChooser().getExtensionFilters().get(1));
     }
 }

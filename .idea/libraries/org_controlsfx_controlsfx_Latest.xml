@@ -52,6 +52,9 @@
       <root url="jar://$PROJECT_DIR$/lib/controlsfx-8.40.12.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/controlsfx-8.40.12.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/controlsfx-8.40.12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/controlsfx-9.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/controlsfx-9.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/controlsfx-9.0.0.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$PROJECT_DIR$/lib/controlsfx-8.40.10-javadoc.jar!/" />
@@ -104,6 +107,9 @@
       <root url="jar://$PROJECT_DIR$/lib/controlsfx-8.40.12-javadoc.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/controlsfx-8.40.12-javadoc.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/controlsfx-8.40.12-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/controlsfx-9.0.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/controlsfx-9.0.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/controlsfx-9.0.0-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/lib/controlsfx-8.40.10-sources.jar!/" />
@@ -156,6 +162,9 @@
       <root url="jar://$PROJECT_DIR$/lib/controlsfx-8.40.12-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/controlsfx-8.40.12-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/controlsfx-8.40.12-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/controlsfx-9.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/controlsfx-9.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/controlsfx-9.0.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

@@ -2,21 +2,21 @@
 <Plan>
   <ActionPatterns>
     <ActionPattern name ="AP-ShootBack">
-      <action name ="TurnToIncomingDamageLocation"></action>
-      <action name ="ShootEnemiesInSight"></action>
+      <Action name ="TurnToIncomingDamageLocation"></Action>
+      <Action name ="ShootEnemiesInSight"></Action>
     </ActionPattern>
     <ActionPattern name ="AP-ShootEnemiesInSight">
-      <action name ="ShootEnemiesInSight"></action>
+      <Action name ="ShootEnemiesInSight"></Action>
     </ActionPattern>
     <ActionPattern name ="AP-MoveAround">
-      <action name ="TurnTowardsNextPathNode"></action>
-      <action name ="MoveToNextNode"></action>
+      <Action name ="TurnTowardsNextPathNode"></Action>
+      <Action name ="MoveToNextNode"></Action>
     </ActionPattern>
     <ActionPattern name ="AP-GrabFlag">
-      <action name ="GrabEnemyTeamFlag"></action>
+      <Action name ="GrabEnemyTeamFlag"></Action>
     </ActionPattern>
     <ActionPattern name ="AP-Return">
-      <action name ="ReturnToBase"></action>
+      <Action name ="ReturnToBase"></Action>
     </ActionPattern>
   </ActionPatterns>  
   <CompetenceElements>

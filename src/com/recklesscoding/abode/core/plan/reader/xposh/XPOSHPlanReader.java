@@ -58,7 +58,7 @@ public class XPOSHPlanReader extends PlanReader {
         for (int i = 0; i < actionPatternsNodes.getLength(); i++) {
             if (actionPatternsNodes.item(i).getNodeType() == Node.ELEMENT_NODE) {
                 Element actionPatternElement = (Element) actionPatternsNodes.item(i);
-                NodeList actionNodes = actionPatternElement.getElementsByTagName("action");
+                NodeList actionNodes = actionPatternElement.getElementsByTagName("Action");
                 List<ActionEvent> actions = new ArrayList<>();
                 for (int j = 0; j < actionNodes.getLength(); j++) {
                     if (actionNodes.item(j).getNodeType() == Node.ELEMENT_NODE) {
