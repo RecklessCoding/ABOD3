@@ -165,7 +165,7 @@ public class XPOSHPlanReader extends PlanReader {
         for (int i = 0; i < drivesNodes.getLength(); i++) {
             if (drivesNodes.item(i).getNodeType() == Node.ELEMENT_NODE) {
                 Element driveElement = (Element) drivesNodes.item(i);
-                List<Sense> conditions = conditionsCreator(driveElement.getElementsByTagName("Conditions"));
+                List<Sense> conditions = conditionsCreator(driveElement.getElementsByTagName("Goals"));
                 List<DriveElement> driveElements = deCCreator(driveElement.getElementsByTagName("DriveElements"));
                 DriveCollection driveCollection = new DriveCollection(driveElement.getAttribute("name"),
                         conditions, driveElements);
@@ -179,7 +179,7 @@ public class XPOSHPlanReader extends PlanReader {
         for (int i = 0; i < conditionsNodes.getLength(); i++) {
             if (conditionsNodes.item(i).getNodeType() == Node.ELEMENT_NODE) {
                 Element conditionsElement = (Element) conditionsNodes.item(i);
-                NodeList conditionNodes = conditionsElement.getElementsByTagName("Condition");
+                NodeList conditionNodes = conditionsElement.getElementsByTagName("Sense");
                 for (int j = 0; j < conditionNodes.getLength(); j++) {
                     if (conditionNodes.item(j).getNodeType() == Node.ELEMENT_NODE) {
                         Element conditionElement = (Element) conditionNodes.item(j);
@@ -199,7 +199,7 @@ public class XPOSHPlanReader extends PlanReader {
         for (int i = 0; i < goalsNodes.getLength(); i++) {
             if (goalsNodes.item(i).getNodeType() == Node.ELEMENT_NODE) {
                 Element goalsElement = (Element) goalsNodes.item(i);
-                NodeList goalNodes = goalsElement.getElementsByTagName("Goal");
+                NodeList goalNodes = goalsElement.getElementsByTagName("Sense");
                 for (int j = 0; j < goalNodes.getLength(); j++) {
                     if (goalNodes.item(j).getNodeType() == Node.ELEMENT_NODE) {
                         Element goalElement = (Element) goalNodes.item(j);

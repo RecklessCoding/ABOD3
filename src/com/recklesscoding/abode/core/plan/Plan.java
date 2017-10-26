@@ -46,8 +46,11 @@ public class Plan {
     }
 
     public void cleanAllLists() {
+        actionEvents.clear();
         actionPatterns.clear();
+        competenceElements.clear();
         competences.clear();
+        driveElements.clear();
         driveCollections.clear();
     }
 
