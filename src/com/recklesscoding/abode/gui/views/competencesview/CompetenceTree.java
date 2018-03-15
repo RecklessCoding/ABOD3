@@ -39,7 +39,7 @@ public class CompetenceTree extends PlanTree {
         for (Competence competence : competences) {
             item = new TreeItemWrapper<>(competence);
 //            TreeItemWrapper<PlanElement> goalItem = new TreeItemWrapper<>((new Sense("Goal", null, null)));
-//            for (Sense competenceGoal : competence.getGoals()) {
+//            for (Sense competenceGoal : competence.getSenses()) {
 //                goalItem.getChildren().add(new TreeItemWrapper<>(competenceGoal));
 //            }
 //            item.getChildren().add(goalItem);

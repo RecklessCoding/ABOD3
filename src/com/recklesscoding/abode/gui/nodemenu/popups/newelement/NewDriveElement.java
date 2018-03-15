@@ -4,12 +4,11 @@ import com.recklesscoding.abode.core.plan.Plan;
 import com.recklesscoding.abode.core.plan.nodes.PlanElementNode;
 import com.recklesscoding.abode.core.plan.planelements.ElementWithTrigger;
 import com.recklesscoding.abode.core.plan.planelements.PlanElement;
-import com.recklesscoding.abode.core.plan.planelements.competence.Competence;
 import com.recklesscoding.abode.core.plan.planelements.competence.CompetenceElement;
 import com.recklesscoding.abode.core.plan.planelements.drives.DriveCollection;
 import com.recklesscoding.abode.core.plan.planelements.drives.DriveElement;
+import com.recklesscoding.abode.gui.nodemenu.popups.panes.SelectRTPane;
 import com.recklesscoding.abode.gui.nodemenu.popups.panes.SensesPane;
-import com.recklesscoding.abode.gui.nodemenu.popups.panes.SelectTimePane;
 import com.recklesscoding.abode.gui.views.diagramview.diagram.GraphWindow;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -20,60 +19,54 @@ import javafx.scene.control.Label;
  * @author :   Andreas Theodorou - www.recklesscoding.com
  * @version :   %G%
  */
-public class NewCompetence extends NewElementPopup {
+public class NewDriveElement extends NewElementPopup {
 
-    private SelectTimePane timePane;
+    private SelectRTPane rtPane;
 
     private SensesPane sensesPane;
 
-    private static final String TITLE_LABEL = "New Competence";
+    private static final String TITLE_LABEL = "New Drive Element";
 
-    private static final String TIME_LABEL = "Timeout";
+    private static final String SENSES_LABEL = "Senses";
 
-    private static final String GOALS = "Goals";
-
-    public NewCompetence(PlanElementNode planElementNode, GraphWindow graphWindow) {
+    public NewDriveElement(PlanElementNode planElementNode, GraphWindow graphWindow) {
         super(TITLE_LABEL, planElementNode, graphWindow);
     }
 
     @Override
     void addContent() {
         sensesPane = new SensesPane();
-        timePane = new SelectTimePane();
-        addContentItem(new Label(TIME_LABEL));
-        addContentItem(timePane);
-        addContentItem(new Label(GOALS));
-        addContentItem(sensesPane);
+        addContentItem(new Label(SENSES_LABEL));
+        addContentItem(new SensesPane());
     }
-
 
     @Override
     protected void addSaveButton(Button saveButton, PlanElement fatherElement) {
         saveButton.setOnAction(event -> {
                     if (isTextNotEmpty(getName())) {
-                        Competence competence = new Competence(getName());
-                        setTriggeredElement(fatherElement, competence);
-                        setTime(competence);
-                        saveActions(competence);
+                        DriveElement driveElement = new DriveElement(getName());
+                        driveElement.setDriveElementSenses(sensesPane.getSenses());
+                        saveDE(driveElement, fatherElement);
                     }
                 }
         );
     }
 
-    private void saveActions(Competence competence) {
-        Plan.getInstance().addCompetence(competence);
+    private void saveDE(DriveElement driveElement, PlanElement fatherElement) {
+        Plan.getInstance().addDriveElement(driveElement);
+        DriveCollection driveCollection = (DriveCollection) fatherElement;
+        driveCollection.addDriveElement(driveElement);
         refresh();
     }
 
-    private void setTriggeredElement(PlanElement fatherElement, Competence competence) {
+    private void setTriggeredElement(PlanElement fatherElement, DriveCollection driveCollection) {
         if (fatherElement instanceof CompetenceElement || fatherElement instanceof DriveElement || fatherElement instanceof DriveCollection) {
             ElementWithTrigger elementWithTrigger = (ElementWithTrigger) fatherElement;
-            elementWithTrigger.setTriggeredElement(competence);
+            elementWithTrigger.setTriggeredElement(driveCollection);
         }
     }
 
-    private void setTime(Competence competence) {
-            competence.setTimeout(timePane.getTime());
-            competence.setTimeUnits(timePane.getTimeUnit());
+    private void setTime(DriveCollection driveCollection) {
+
     }
 }

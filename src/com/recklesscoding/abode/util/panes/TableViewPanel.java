@@ -8,6 +8,8 @@ import javafx.collections.ObservableList;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableView;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.Pane;
 
 import java.util.Collections;
@@ -42,7 +44,6 @@ public class TableViewPanel<PlanElement> extends VBoxWrapper {
         addItem(table);
         initButtons();
     }
-
     private void initButtons() {
         Button addButton = new Button("*");
         addButton.setOnAction(event -> {

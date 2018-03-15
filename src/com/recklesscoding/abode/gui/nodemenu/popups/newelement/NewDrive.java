@@ -7,7 +7,7 @@ import com.recklesscoding.abode.core.plan.planelements.PlanElement;
 import com.recklesscoding.abode.core.plan.planelements.competence.CompetenceElement;
 import com.recklesscoding.abode.core.plan.planelements.drives.DriveCollection;
 import com.recklesscoding.abode.core.plan.planelements.drives.DriveElement;
-import com.recklesscoding.abode.gui.nodemenu.popups.panes.GoalsPane;
+import com.recklesscoding.abode.gui.nodemenu.popups.panes.SensesPane;
 import com.recklesscoding.abode.gui.nodemenu.popups.panes.SelectRTPane;
 import com.recklesscoding.abode.gui.views.diagramview.diagram.GraphWindow;
 import javafx.scene.control.Button;
@@ -23,7 +23,7 @@ public class NewDrive extends NewElementPopup {
 
     private SelectRTPane rtPane;
 
-    private GoalsPane goalsPane;
+    private SensesPane sensesPane;
 
     private static final String TITLE_LABEL = "New Drive";
 
@@ -37,13 +37,13 @@ public class NewDrive extends NewElementPopup {
 
     @Override
     void addContent() {
-        goalsPane = new GoalsPane();
+        sensesPane = new SensesPane();
         rtPane = new SelectRTPane();
 
         addContentItem(new Label(REAL_TIME));
         addContentItem(rtPane);
         addContentItem(new Label(GOALS));
-        addContentItem(new GoalsPane());
+        addContentItem(new SensesPane());
     }
 
     @Override
@@ -53,13 +53,13 @@ public class NewDrive extends NewElementPopup {
                         DriveCollection driveCollection = new DriveCollection(getName());
                         setTriggeredElement(fatherElement, driveCollection);
                         setTime(driveCollection);
-                        saveActions(driveCollection);
+                        saveDC(driveCollection);
                     }
                 }
         );
     }
 
-    private void saveActions(DriveCollection driveCollection) {
+    private void saveDC(DriveCollection driveCollection) {
         Plan.getInstance().addDriveCollection(driveCollection);
         refresh();
     }

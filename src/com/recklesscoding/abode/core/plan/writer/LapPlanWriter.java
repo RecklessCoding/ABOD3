@@ -118,7 +118,7 @@ public class LapPlanWriter implements IWriter {
     }
 
     private String constructDELine(DriveElement driveElement) {
-        return OPENING_BRACKET+ driveElement.getNameOfElement() + EMPTY_SPACE + constructTriggers(driveElement.getDriveElementSenses())
+        return OPENING_BRACKET+ driveElement.getNameOfElement() + EMPTY_SPACE + constructTriggers(driveElement.getSenses())
                 + EMPTY_SPACE + driveElement.getTriggeredElement() +OPENING_BRACKET +
                 contructTime(driveElement.getFrequencyUnit().toLowerCase(), String.valueOf(driveElement.getFrequencyValue()))
                 + CLOSING_AND_NEW_LINE;

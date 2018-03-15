@@ -54,7 +54,7 @@ public class MouseGestures {
 
         planElementNode.setOnMouseClicked(mouseEvent ->
         {
-            if (hasLeftButtonClicked(mouseEvent)) {
+            if (hasLeftButtonClicked(mouseEvent) && mouseEvent.isStillSincePress()) {
                 if (planElementNode instanceof ActionNode) {
                     Platform.runLater(() -> new EditAction(planElementNode, graphWindow));
                 } else if (planElementNode instanceof ActionPatternNode) {
@@ -64,7 +64,7 @@ public class MouseGestures {
                 } else if (planElementNode instanceof CompetenceElementNode) {
                     Platform.runLater(() -> new EditCompetenceElement(planElementNode, graphWindow));
                 } else if (planElementNode instanceof DriveElementNode) {
-                    //  Platform.runLater(() -> new Edt(planElementNode, graphWindow));
+                      Platform.runLater(() -> new EditDriveElement(planElementNode, graphWindow));
                 } else if (planElementNode instanceof DriveCollectionNode) {
                     Platform.runLater(() -> new EditDriveCollection(planElementNode, graphWindow));
                 }

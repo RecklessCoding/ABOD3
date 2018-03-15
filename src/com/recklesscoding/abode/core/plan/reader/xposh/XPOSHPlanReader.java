@@ -150,7 +150,7 @@ public class XPOSHPlanReader extends PlanReader {
         for (int i = 0; i < competenceElementNodes.getLength(); i++) {
             if (competenceElementNodes.item(i).getNodeType() == Node.ELEMENT_NODE) {
                 Element competenceElement = (Element) competenceElementNodes.item(i);
-                List<Sense> goals = goalsCreator(competenceElement.getElementsByTagName("Goals"));
+                List<Sense> goals = conditionsCreator(competenceElement.getElementsByTagName("Goals"));
                 List<CompetenceElement> competenceElements = ceCCreator(competenceElement.getElementsByTagName("CompetenceElements"));
                 Competence competence = new Competence(competenceElement.getAttribute("name"),
                         goals, competenceElements);
@@ -192,26 +192,6 @@ public class XPOSHPlanReader extends PlanReader {
             }
         }
         return senses;
-    }
-
-    private List<Sense> goalsCreator(NodeList goalsNodes) {
-        List<Sense> goals = new ArrayList<>();
-        for (int i = 0; i < goalsNodes.getLength(); i++) {
-            if (goalsNodes.item(i).getNodeType() == Node.ELEMENT_NODE) {
-                Element goalsElement = (Element) goalsNodes.item(i);
-                NodeList goalNodes = goalsElement.getElementsByTagName("Sense");
-                for (int j = 0; j < goalNodes.getLength(); j++) {
-                    if (goalNodes.item(j).getNodeType() == Node.ELEMENT_NODE) {
-                        Element goalElement = (Element) goalNodes.item(j);
-                        Sense sense = Plan.getInstance().createSense(goalElement.getAttribute("name"),
-                                goalElement.getAttribute("comperator"), goalElement.getAttribute("value"));
-                        goals.add(sense);
-                    }
-                }
-                return goals;
-            }
-        }
-        return goals;
     }
 
     private List<CompetenceElement> ceCCreator(NodeList cesNodes) {

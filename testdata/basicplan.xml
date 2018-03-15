@@ -67,7 +67,7 @@
         </DriveElement>
         <DriveElement name="DE-ScoreFlag" triggers="AP-Return" checkTime="1">
             <Conditions>
-                <Condition name="HasFlag" value="1" comperator="bool"></Condition>
+                <Sense name="HasFlag" value="1" comperator="bool"></Sense>
             </Conditions>
         </DriveElement>
     </DriveElements>
@@ -83,6 +83,7 @@
         </Drive>
         <Drive name="D-KillEnemies">
             <Goals>
+                <Sense name="HasFlag" value="0" comperator="bool"></Sense>
             </Goals>
             <DriveElements>
                 <DriveElement name="DE-ShootBack"></DriveElement>

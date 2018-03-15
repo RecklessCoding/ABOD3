@@ -5,7 +5,7 @@ import com.recklesscoding.abode.core.plan.nodes.PlanElementNode;
 import com.recklesscoding.abode.core.plan.planelements.PlanElement;
 import com.recklesscoding.abode.core.plan.planelements.competence.Competence;
 import com.recklesscoding.abode.core.plan.planelements.drives.DriveCollection;
-import com.recklesscoding.abode.gui.nodemenu.popups.panes.GoalsPane;
+import com.recklesscoding.abode.gui.nodemenu.popups.panes.SensesPane;
 import com.recklesscoding.abode.gui.nodemenu.popups.panes.SelectRTPane;
 import com.recklesscoding.abode.gui.views.diagramview.diagram.GraphWindow;
 import javafx.scene.control.Button;
@@ -21,7 +21,7 @@ public class EditDriveCollection extends EditElementPopup {
 
     private SelectRTPane rtPane;
 
-    private GoalsPane goalsPane;
+    private SensesPane sensesPane;
 
     private static final String REAL_TIME = "Real-time";
 
@@ -35,13 +35,14 @@ public class EditDriveCollection extends EditElementPopup {
     void addContent(PlanElement planElement) {
         DriveCollection driveCollection = (DriveCollection) planElement;
 
-        goalsPane = new GoalsPane(driveCollection.getGoals());
+        sensesPane = new SensesPane(driveCollection.getGoals());
         rtPane = new SelectRTPane(driveCollection.isSetToUpdate());
 
         addContentItem(new Label(REAL_TIME));
         addContentItem(rtPane);
+
         addContentItem(new Label(GOALS));
-        addContentItem(goalsPane);
+        addContentItem(sensesPane);
     }
 
 
@@ -51,17 +52,13 @@ public class EditDriveCollection extends EditElementPopup {
                     if (isTextNotEmpty(getName())) {
                         DriveCollection driveCollection = (DriveCollection) planElement;
                         driveCollection.setNameOfElement(getName());
-//                        driveCollection.setGoals(goalsPane.getGoals());
+                     //   driveCollection.setGoals(sensesPane.getSenses());
                         setRT(driveCollection);
                     }
                 }
         );
     }
 
-    private void saveActions(Competence competence) {
-        Plan.getInstance().addCompetence(competence);
-        refresh();
-    }
 
     private void setRT(DriveCollection driveCollection) {
         driveCollection.setRealTime(rtPane.isRT());

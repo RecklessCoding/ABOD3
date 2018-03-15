@@ -46,14 +46,14 @@ public class DrivesCollectionsTree extends PlanTree {
         for (DriveCollection driveCollection : driveCollections) {
             item = new TreeItemWrapper<>(driveCollection);
 //            TreeItemWrapper<PlanElement> goalItem = new TreeItemWrapper<>((new Sense("Goal", null, null)));
-//            for (Sense goal : driveCollection.getGoals()) {
+//            for (Sense goal : driveCollection.getSenses()) {
 //                goalItem.getChildren().add(new TreeItemWrapper<>(goal));
 //            }
 //            item.getChildren().add(goalItem);
 
             for (DriveElement driveElement : driveCollection.getDriveElements()) {
                 TreeItemWrapper<PlanElement> driveElementItem = new TreeItemWrapper<>((driveElement));
-                for (Sense sense : driveElement.getDriveElementSenses()) {
+                for (Sense sense : driveElement.getSenses()) {
                     driveElementItem.getChildren().add(new TreeItemWrapper<>(sense));
                 }
 

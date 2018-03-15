@@ -4,7 +4,7 @@ import com.recklesscoding.abode.core.plan.Plan;
 import com.recklesscoding.abode.core.plan.nodes.PlanElementNode;
 import com.recklesscoding.abode.core.plan.planelements.PlanElement;
 import com.recklesscoding.abode.core.plan.planelements.competence.Competence;
-import com.recklesscoding.abode.gui.nodemenu.popups.panes.GoalsPane;
+import com.recklesscoding.abode.gui.nodemenu.popups.panes.SensesPane;
 import com.recklesscoding.abode.gui.nodemenu.popups.panes.SelectTimePane;
 import com.recklesscoding.abode.gui.views.diagramview.diagram.GraphWindow;
 import javafx.scene.control.Button;
@@ -20,7 +20,7 @@ public class EditCompetence extends EditElementPopup {
 
     private SelectTimePane timePane;
 
-    private GoalsPane goalsPane;
+    private SensesPane sensesPane;
 
     private static final String TIME_LABEL = "Timeout";
 
@@ -33,12 +33,12 @@ public class EditCompetence extends EditElementPopup {
     @Override
     void addContent(PlanElement planElement) {
         Competence competence = (Competence) planElement;
-        goalsPane = new GoalsPane();
+        sensesPane = new SensesPane(competence.getGoals());
         timePane = new SelectTimePane(competence.getTimeout(), competence.getTimeUnits());
         addContentItem(new Label(TIME_LABEL));
         addContentItem(timePane);
         addContentItem(new Label(GOALS));
-        addContentItem(goalsPane);
+        addContentItem(sensesPane);
     }
 
 
@@ -48,7 +48,7 @@ public class EditCompetence extends EditElementPopup {
                     if (isTextNotEmpty(getName())) {
                         Competence competence = (Competence) planElement;
                         competence.setNameOfElement(getName());
-                        competence.setGoals(goalsPane.getGoals());
+                        competence.setGoals(sensesPane.getSenses());
                         setTime(competence);
                         saveActions(competence);
                     }

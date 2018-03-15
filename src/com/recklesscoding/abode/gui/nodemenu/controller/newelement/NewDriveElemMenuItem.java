@@ -1,7 +1,10 @@
 package com.recklesscoding.abode.gui.nodemenu.controller.newelement;
 
 import com.recklesscoding.abode.core.plan.nodes.PlanElementNode;
+import com.recklesscoding.abode.gui.nodemenu.popups.editelement.EditDriveElement;
+import com.recklesscoding.abode.gui.nodemenu.popups.newelement.NewDriveElement;
 import com.recklesscoding.abode.gui.views.diagramview.diagram.GraphWindow;
+import javafx.application.Platform;
 import javafx.stage.Stage;
 
 /**
@@ -19,6 +22,6 @@ public class NewDriveElemMenuItem extends NewPlanElementMenuItem {
 
     @Override
     void initButtonAction(Stage primaryStage, PlanElementNode planElementNode, GraphWindow graphWindow) {
-
+        setOnAction(t -> Platform.runLater(() -> new NewDriveElement(planElementNode, graphWindow)));
     }
 }

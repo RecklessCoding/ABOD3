@@ -83,6 +83,11 @@ public class DriveCollection extends ElementWithTrigger {
         this.driveElements = driveElements;
     }
 
+    public void addGoals()
+    {
+
+    }
+
     public List<Sense> getGoals() {
         return goals;
     }

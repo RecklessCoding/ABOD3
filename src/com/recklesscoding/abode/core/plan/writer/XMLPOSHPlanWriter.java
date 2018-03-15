@@ -162,7 +162,7 @@ public class XMLPOSHPlanWriter implements IWriter {
         Element sensesElement = createConditionsElement(doc, deElement);
 
         for (Sense sense :
-                driveElement.getDriveElementSenses()) {
+                driveElement.getSenses()) {
             Element senseElement = createSenseElement(doc, sense);
             sensesElement.appendChild(senseElement);
         }

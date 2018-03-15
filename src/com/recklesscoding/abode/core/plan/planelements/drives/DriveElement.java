@@ -110,7 +110,7 @@ public class DriveElement extends ElementWithTrigger {
         this.frequencyUnit = frequencyUnit;
     }
 
-    public List<Sense> getDriveElementSenses() {
+    public List<Sense> getSenses() {
         return driveElementSenses;
     }
 

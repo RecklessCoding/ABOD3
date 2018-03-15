@@ -60,7 +60,7 @@ public class LogicalViewTree extends PlanTree {
                 driveElementItem.getChildren().add(new TreeItemWrapper<>(driveElement.getTriggeredElement()));
 
                 TreeItemWrapper<PlanElement> triggerElementsItem = new TreeItemWrapper<>((new Sense("Trigger Elements", null, null)));
-                for (Sense sense : driveElement.getDriveElementSenses()) {
+                for (Sense sense : driveElement.getSenses()) {
                     triggerElementsItem.addChild(new TreeItemWrapper<>(sense));
                 }
                 driveElementItem.addChild(triggerElementsItem);

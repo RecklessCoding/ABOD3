@@ -2,10 +2,8 @@ package com.recklesscoding.abode.gui.nodemenu.popups.editelement;
 
 import com.recklesscoding.abode.core.plan.nodes.PlanElementNode;
 import com.recklesscoding.abode.core.plan.planelements.PlanElement;
-import com.recklesscoding.abode.core.plan.planelements.competence.CompetenceElement;
-import com.recklesscoding.abode.core.plan.planelements.drives.DriveCollection;
-import com.recklesscoding.abode.gui.nodemenu.popups.panes.GoalsPane;
-import com.recklesscoding.abode.gui.nodemenu.popups.panes.SelectRTPane;
+import com.recklesscoding.abode.core.plan.planelements.drives.DriveElement;
+import com.recklesscoding.abode.gui.nodemenu.popups.panes.SensesPane;
 import com.recklesscoding.abode.gui.views.diagramview.diagram.GraphWindow;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -18,13 +16,9 @@ import javafx.scene.control.Label;
  */
 public class EditDriveElement extends EditElementPopup {
 
-    private SelectRTPane rtPane;
+    private SensesPane sensesPane;
 
-    private GoalsPane goalsPane;
-
-    private static final String REAL_TIME = "Real-time";
-
-    private static final String GOALS = "Goals";
+    private static final String SENSES_LABEL = "Senses";
 
     public EditDriveElement(PlanElementNode planElementNode, GraphWindow graphWindow) {
         super(planElementNode, graphWindow);
@@ -32,15 +26,12 @@ public class EditDriveElement extends EditElementPopup {
 
     @Override
     void addContent(PlanElement planElement) {
-        DriveCollection driveCollection = (DriveCollection) planElement;
+        DriveElement driveElement = (DriveElement) planElement;
 
-        goalsPane = new GoalsPane(driveCollection.getGoals());
-        rtPane = new SelectRTPane(driveCollection.isSetToUpdate());
+        sensesPane = new SensesPane(driveElement.getSenses());
 
-        addContentItem(new Label(REAL_TIME));
-        addContentItem(rtPane);
-        addContentItem(new Label(GOALS));
-        addContentItem(goalsPane);
+        addContentItem(new Label(SENSES_LABEL));
+        addContentItem(sensesPane);
     }
 
 
@@ -48,9 +39,9 @@ public class EditDriveElement extends EditElementPopup {
     protected void addSaveButton(Button saveButton, PlanElement planElement) {
         saveButton.setOnAction(event -> {
                     if (isTextNotEmpty(getName())) {
-                        CompetenceElement competenceElement = (CompetenceElement) planElement;
-                        competenceElement.setNameOfElement(getName());
-//                        competenceElement.setRetries(retriesPane.getRetries());
+                        DriveElement driveElement = (DriveElement) planElement;
+                        driveElement.setNameOfElement(getName());
+                        driveElement.setDriveElementSenses(sensesPane.getSenses());
                         refresh();
                     }
                 }

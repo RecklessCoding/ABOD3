@@ -54,7 +54,7 @@ public class NodeMenu extends ContextMenu {
         } else if (planElement instanceof DriveCollection) {
             addMenuItem(new EditDriveCollectionMenuItem(primaryStage, planElementNode, graphWindow));
         } else if (planElement instanceof DriveElement) {
-            addMenuItem(new EditDriveCollectionMenuItem(primaryStage, planElementNode, graphWindow));
+            addMenuItem(new EditDriveElemMenuItem(primaryStage, planElementNode, graphWindow));
         }
     }
 

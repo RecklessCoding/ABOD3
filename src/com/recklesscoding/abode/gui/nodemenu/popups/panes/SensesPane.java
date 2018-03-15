@@ -15,28 +15,26 @@ import java.util.List;
  * @author :   Andreas Theodorou - www.recklesscoding.com
  * @version :   %G%
  */
-public class GoalsPane extends VBoxWrapper {
+public class SensesPane extends VBoxWrapper {
 
+    private ObservableList<Sense> senses = FXCollections.observableArrayList();
 
-
-    private ObservableList<Sense> goals = FXCollections.observableArrayList();
-
-    public GoalsPane() {
+    public SensesPane() {
         init();
     }
 
-    public GoalsPane(List<Sense> goals) {
-        goals.addAll(goals);
+    public SensesPane(List<Sense> senses) {
+        this.senses.addAll(senses);
+
         init();
     }
 
     private void init() {
-        TableViewPanel<Sense> tableView = new SensesTableView();
-
+        TableViewPanel<Sense> tableView = new SensesTableView(senses);
         addItem(tableView);
     }
 
-    public List<Sense> getGoals() {
-        return goals;
+    public List<Sense> getSenses() {
+        return senses;
     }
 }
