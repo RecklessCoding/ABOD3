@@ -19,6 +19,8 @@ public class SensesPane extends VBoxWrapper {
 
     private ObservableList<Sense> senses = FXCollections.observableArrayList();
 
+    private SensesTableView tableView;
+
     public SensesPane() {
         init();
     }
@@ -30,11 +32,11 @@ public class SensesPane extends VBoxWrapper {
     }
 
     private void init() {
-        TableViewPanel<Sense> tableView = new SensesTableView(senses);
+        tableView = new SensesTableView(senses);
         addItem(tableView);
     }
 
     public List<Sense> getSenses() {
-        return senses;
+        return tableView.getSenses();
     }
 }

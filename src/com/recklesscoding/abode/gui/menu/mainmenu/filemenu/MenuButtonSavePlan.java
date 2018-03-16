@@ -30,7 +30,7 @@ public class MenuButtonSavePlan extends MenuButtonFileHandler {
 
     @Override
     protected  void initFileChooser() {
-        getFileChooser().setTitle("Open Video File");
+        getFileChooser().setTitle("Save Plan File");
         getFileChooser().getExtensionFilters().addAll(new FileChooser.ExtensionFilter("All files", "*.*"),
                 new FileChooser.ExtensionFilter("XML", "*.xml"));
         getFileChooser().setSelectedExtensionFilter(getFileChooser().getExtensionFilters().get(1));

@@ -44,6 +44,6 @@ public class SelectTimePane extends HBoxWrapper {
     }
 
     public TimeUnits getTimeUnit() {
-        return TimeUnits.getTimeUnits(comboBox.getPromptText());
+        return TimeUnits.getTimeUnits(comboBox.getSelectionModel().getSelectedItem().toString());
     }
 }

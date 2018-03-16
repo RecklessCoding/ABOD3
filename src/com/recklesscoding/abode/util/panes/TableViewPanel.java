@@ -30,20 +30,12 @@ public class TableViewPanel<PlanElement> extends VBoxWrapper {
         init();
     }
 
-    /**
-     * @param list        Context that will be added the source list
-     */
-    public TableViewPanel(ObservableList list) {
-        table = new TableViewWrapper();
-
-        init();
-    }
-
     private void init() {
         setSpacing(5);
         addItem(table);
         initButtons();
     }
+
     private void initButtons() {
         Button addButton = new Button("*");
         addButton.setOnAction(event -> {

@@ -53,7 +53,7 @@
 }
 
 .context-menu {
-    -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
+    /*-fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";*/
     -fx-background-color: rgba(60, 63, 65, 0.86);
     -fx-background-radius: 0 6 6 6, 0 5 5 5, 0 4 4 4;
 }
@@ -62,7 +62,7 @@
 
 /* CSS for the tab pane*/
 .tab-pane {
-    -fx-skin: "com.sun.javafx.scene.control.skin.TabPaneSkin";
+   /* -fx-skin: "com.sun.javafx.scene.control.skin.TabPaneSkin"; */
     -fx-background-color:rgba(60, 63, 65, 0.86);
 }
 

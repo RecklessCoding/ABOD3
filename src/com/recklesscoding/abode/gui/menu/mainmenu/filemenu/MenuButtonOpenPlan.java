@@ -27,7 +27,7 @@ public class MenuButtonOpenPlan extends MenuButtonFileHandler {
 
     @Override
     protected void initFileChooser() {
-        getFileChooser().setTitle("Open Video File");
+        getFileChooser().setTitle("Open Plan File");
         getFileChooser().getExtensionFilters().addAll(new FileChooser.ExtensionFilter("All files", "*.*"),
                 new FileChooser.ExtensionFilter("XPOSH", "*.xml"), new FileChooser.ExtensionFilter("Instinct", "*.inst"),
                 new FileChooser.ExtensionFilter("Lap", "*.lap"));

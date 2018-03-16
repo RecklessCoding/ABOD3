@@ -61,9 +61,6 @@ public class XMLPOSHPlanWriter implements IWriter {
             DOMSource source = new DOMSource(doc);
             StreamResult result = new StreamResult(new File(filePath));
             transformer.transform(source, result);
-
-            System.out.println("File saved!");
-
         } catch (TransformerException tfe) {
             tfe.printStackTrace();
         } catch (ParserConfigurationException e) {

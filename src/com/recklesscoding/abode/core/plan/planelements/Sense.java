@@ -10,7 +10,6 @@ public class Sense extends PlanElement {
 
     private String comperator;
 
-
     public Sense(String nameOfElement) {
         super(nameOfElement);
     }
@@ -26,6 +25,7 @@ public class Sense extends PlanElement {
     }
 
     public void setValue(String value) {
+        System.out.println(value);
         this.value = value;
     }
 
