@@ -81,7 +81,7 @@ public class XPOSHPlanReader extends PlanReader {
             if (competenceElementNodes.item(i).getNodeType() == Node.ELEMENT_NODE &&
                     competenceElementNodes.item(i).getParentNode().getParentNode().getNodeName() != "Competence") {
                 Element ceElement = (Element) competenceElementNodes.item(i);
-                List<Sense> senses = conditionsCreator(ceElement.getElementsByTagName("Conditions"));
+                List<Sense> senses = conditionsCreator(ceElement.getElementsByTagName("Senses"));
                 CompetenceElement competenceElement = new CompetenceElement(ceElement.getAttribute("name"),
                         senses);
                 Plan.getInstance().addCompetenceElement(competenceElement);
@@ -116,7 +116,7 @@ public class XPOSHPlanReader extends PlanReader {
         for (int i = 0; i < driveElementNode.getLength(); i++) {
             if (driveElementNode.item(i).getNodeType() == Node.ELEMENT_NODE && driveElementNode.item(i).getParentNode().getParentNode().getNodeName() != "DriveElements") {
                 Element deElement = (Element) driveElementNode.item(i);
-                List<Sense> senses = conditionsCreator(deElement.getElementsByTagName("Conditions"));
+                List<Sense> senses = conditionsCreator(deElement.getElementsByTagName("Senses"));
                 String checkTime = deElement.getAttribute("checkTime");
                 DriveElement driveElement;
 
@@ -150,7 +150,7 @@ public class XPOSHPlanReader extends PlanReader {
         for (int i = 0; i < competenceElementNodes.getLength(); i++) {
             if (competenceElementNodes.item(i).getNodeType() == Node.ELEMENT_NODE) {
                 Element competenceElement = (Element) competenceElementNodes.item(i);
-                List<Sense> goals = conditionsCreator(competenceElement.getElementsByTagName("Goals"));
+                List<Sense> goals = conditionsCreator(competenceElement.getElementsByTagName("Senses"));
                 List<CompetenceElement> competenceElements = ceCCreator(competenceElement.getElementsByTagName("CompetenceElements"));
                 Competence competence = new Competence(competenceElement.getAttribute("name"),
                         goals, competenceElements);
@@ -165,7 +165,7 @@ public class XPOSHPlanReader extends PlanReader {
         for (int i = 0; i < drivesNodes.getLength(); i++) {
             if (drivesNodes.item(i).getNodeType() == Node.ELEMENT_NODE) {
                 Element driveElement = (Element) drivesNodes.item(i);
-                List<Sense> conditions = conditionsCreator(driveElement.getElementsByTagName("Goals"));
+                List<Sense> conditions = conditionsCreator(driveElement.getElementsByTagName("Senses"));
                 List<DriveElement> driveElements = deCCreator(driveElement.getElementsByTagName("DriveElements"));
                 DriveCollection driveCollection = new DriveCollection(driveElement.getAttribute("name"),
                         conditions, driveElements);

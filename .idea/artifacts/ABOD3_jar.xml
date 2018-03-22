@@ -2,13 +2,13 @@
   <artifact type="jar" name="ABOD3:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/ABOD3_jar</output-path>
     <root id="archive" name="ABOD3.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      </element>
       <element id="module-output" name="ABOD3" />
       <element id="extracted-dir" path="$PROJECT_DIR$/lib/controlsfx-samples-8.40.11.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/lib/fxsampler-1.0.9.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/lib/controlsfx-8.40.11.jar" path-in-jar="/" />
-      <element id="file-copy" path="$PROJECT_DIR$/serverport.txt" />
-      <element id="file-copy" path="$PROJECT_DIR$/testdata/Plan4-Names.inst" />
-      <element id="file-copy" path="$PROJECT_DIR$/cmdfile.txt" />
     </root>
   </artifact>
 </component>

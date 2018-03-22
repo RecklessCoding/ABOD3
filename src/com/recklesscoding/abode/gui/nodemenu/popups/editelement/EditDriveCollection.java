@@ -52,7 +52,7 @@ public class EditDriveCollection extends EditElementPopup {
                     if (isTextNotEmpty(getName())) {
                         DriveCollection driveCollection = (DriveCollection) planElement;
                         driveCollection.setNameOfElement(getName());
-                     //   driveCollection.setGoals(sensesPane.getSenses());
+                        driveCollection.setGoals(sensesPane.getSenses());
                         setRT(driveCollection);
                     }
                 }

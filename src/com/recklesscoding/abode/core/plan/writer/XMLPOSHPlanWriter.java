@@ -238,7 +238,7 @@ public class XMLPOSHPlanWriter implements IWriter {
     }
 
     private Element createConditionsElement(Document doc, Element element) {
-        Element sensesElement = doc.createElement("Conditions");
+        Element sensesElement = doc.createElement("Senses");
         element.appendChild(sensesElement);
         return sensesElement;
     }
