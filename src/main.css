@@ -62,16 +62,18 @@
 
 /* CSS for the tab pane*/
 .tab-pane {
-   /* -fx-skin: "com.sun.javafx.scene.control.skin.TabPaneSkin"; */
-    -fx-background-color:rgba(60, 63, 65, 0.86);
+    /* -fx-skin: "com.sun.javafx.scene.control.skin.TabPaneSkin"; */
+    -fx-background-color: rgba(60, 63, 65, 0.86);
+    -fx-tab-max-height: 0;
 }
 
 /* Make it start at the beggining */
 .tab-pane:top *.tab-header-area {
     -fx-background-insets: 0, 0 0 1 0;
-    -fx-padding: 0.0em 0.166667em 0.0em 0.0em; /* overriden as 5 2 0 0 */
+    -fx-padding: 0.0em 0.0em 0.0em 0.0em; /* overriden as 5 2 0 0 */
     -fx-border-color: linear-gradient(to top right, #006c72, #262626);
-    -fx-border-width: 0 0 1px 0;
+    -fx-border-width: 0 0 0 0;
+    visibility: hidden ;
 }
 
 .tab-pane .tab-header-area .tab-header-background {

@@ -7,198 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd755f16-9d38-41e3-b832-25289e6faca2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/ABOD3_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/org_controlsfx_controlsfx_Latest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/ABOD3_jar/ABOD3.jar" afterPath="$PROJECT_DIR$/out/artifacts/ABOD3_jar/ABOD3.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/FileSavers.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/FileSavers.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/Main.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/Editor.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/Editor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/Plan.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/Plan.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/nodes/NodesConnector.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/nodes/NodesConnector.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/nodes/NodesHolder.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/nodes/NodesHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/nodes/NodesHolderHelper.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/nodes/NodesHolderHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/nodes/PlanElementNode.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/nodes/PlanElementNode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/nodes/plannodes/ActionNode.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/nodes/plannodes/ActionNode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/nodes/plannodes/ActionPatternNode.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/nodes/plannodes/ActionPatternNode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/nodes/plannodes/CompetenceElementNode.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/nodes/plannodes/CompetenceElementNode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/nodes/plannodes/CompetenceNode.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/nodes/plannodes/CompetenceNode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/nodes/plannodes/DriveCollectionNode.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/nodes/plannodes/DriveCollectionNode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/nodes/plannodes/DriveElementNode.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/nodes/plannodes/DriveElementNode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/nodes/plannodes/RouteElementNode.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/nodes/plannodes/RouteElementNode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/planelements/ElementWithTrigger.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/planelements/ElementWithTrigger.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/planelements/ITriggable.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/planelements/ITriggable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/planelements/PlanElement.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/planelements/PlanElement.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/planelements/Sense.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/planelements/Sense.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/planelements/TimeUnits.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/planelements/TimeUnits.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/planelements/action/ActionEvent.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/planelements/action/ActionEvent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/planelements/action/ActionPattern.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/planelements/action/ActionPattern.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/planelements/action/ActionPatternElement.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/planelements/action/ActionPatternElement.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/planelements/competence/Competence.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/planelements/competence/Competence.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/planelements/competence/CompetenceElement.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/planelements/competence/CompetenceElement.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/planelements/drives/DriveCollection.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/planelements/drives/DriveCollection.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/planelements/drives/DriveElement.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/planelements/drives/DriveElement.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/reader/PlanReader.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/reader/PlanReader.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/reader/inst/InstPlanReader.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/reader/inst/InstPlanReader.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/reader/inst/builders/InstPlanReaderHelper.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/reader/inst/builders/InstPlanReaderHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/reader/lap/LapPlanReader.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/reader/lap/LapPlanReader.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/reader/lap/builders/ActionPatternsBuilder.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/reader/lap/builders/ActionPatternsBuilder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/reader/lap/builders/CompetencesBuilder.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/reader/lap/builders/CompetencesBuilder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/reader/lap/builders/DriveCollectionBuilder.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/reader/lap/builders/DriveCollectionBuilder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/reader/lap/builders/ElementBuilder.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/reader/lap/builders/ElementBuilder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/reader/lap/builders/PlanElementsBuilder.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/reader/lap/builders/PlanElementsBuilder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/reader/xposh/XPOSHPlanReader.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/core/plan/reader/xposh/XPOSHPlanReader.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/debugger/IDebugger.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/debugger/IDebugger.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/debugger/InsinctDebugger.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/debugger/InsinctDebugger.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/debugger/UnityPOSHDebugger.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/debugger/UnityPOSHDebugger.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/debugger/prerecorded/LogReader.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/debugger/prerecorded/LogReader.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/debugger/prerecorded/LogSynchronizer.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/debugger/prerecorded/LogSynchronizer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/debugger/prerecorded/instinct/InstictLogReader.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/debugger/prerecorded/instinct/InstictLogReader.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/debugger/realtime/instinct/GenericSocket$SetupThread.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/debugger/realtime/instinct/GenericSocket$SetupThread.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/debugger/realtime/instinct/GenericSocket$SocketReaderThread.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/debugger/realtime/instinct/GenericSocket$SocketReaderThread.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/debugger/realtime/instinct/GenericSocket.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/debugger/realtime/instinct/GenericSocket.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/debugger/realtime/instinct/ISocketListener.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/debugger/realtime/instinct/ISocketListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/debugger/realtime/instinct/InstinctServer.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/debugger/realtime/instinct/InstinctServer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/debugger/realtime/instinct/ServerConsoleReader.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/debugger/realtime/instinct/ServerConsoleReader.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/debugger/realtime/instinct/TcpHandler.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/debugger/realtime/instinct/TcpHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/debugger/realtime/instinct/ThreadedServer.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/debugger/realtime/instinct/ThreadedServer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/debugger/realtime/xposh/UnityPOSHServer.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/debugger/realtime/xposh/UnityPOSHServer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/debugger/realtime/xposh/UnityPOSHServerRunnable$WorkerRunnable.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/debugger/realtime/xposh/UnityPOSHServerRunnable$WorkerRunnable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/debugger/realtime/xposh/UnityPOSHServerRunnable.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/debugger/realtime/xposh/UnityPOSHServerRunnable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/EditorLayout.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/EditorLayout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/TextFieldTreeCellImpl.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/TextFieldTreeCellImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/console/AgentNumberComboBox.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/console/AgentNumberComboBox.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/console/ConsoleGUI.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/console/ConsoleGUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/console/ConsoleInputTexField$1.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/console/ConsoleInputTexField$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/console/ConsoleInputTexField.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/console/ConsoleInputTexField.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/console/ConsoleOutputStream.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/console/ConsoleOutputStream.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/console/ConsolePane.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/console/ConsolePane.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/console/ConsoleWindow.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/console/ConsoleWindow.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/console/InsinctServerGUI.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/console/InsinctServerGUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/console/MultipleAgentsPane.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/console/MultipleAgentsPane.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/console/MultipleAgentsWindow.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/console/MultipleAgentsWindow.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/console/UnityPOSHServerGUI.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/console/UnityPOSHServerGUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/console/Window.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/console/Window.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/layout/EditorViewTab.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/layout/EditorViewTab.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/layout/HasGoalsTabLayout.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/layout/HasGoalsTabLayout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/layout/LogicalViewTab.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/layout/LogicalViewTab.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/layout/TabComponent$1.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/layout/TabComponent$1.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/layout/TabComponent$1.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/layout/TabComponent.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/layout/TabComponent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/layout/TabLayout.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/layout/TabLayout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/mainmenu/MainMenuBar.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/mainmenu/MainMenuBar.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/mainmenu/debugmenu/DebugMenu.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/mainmenu/debugmenu/DebugMenu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/mainmenu/debugmenu/MenuButtonOpenLog.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/mainmenu/debugmenu/MenuButtonOpenLog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/mainmenu/debugmenu/MenuButtonOpenVideo.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/mainmenu/debugmenu/MenuButtonOpenVideo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/mainmenu/debugmenu/MenuButtonStartDebug.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/mainmenu/debugmenu/MenuButtonStartDebug.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/mainmenu/debugmenu/MenuButtonStartInstinctServer.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/mainmenu/debugmenu/MenuButtonStartInstinctServer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/mainmenu/debugmenu/MenuButtonStartUnityPOSHServer.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/mainmenu/debugmenu/MenuButtonStartUnityPOSHServer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/mainmenu/debugmenu/MenuButtonStopDebug.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/mainmenu/debugmenu/MenuButtonStopDebug.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/mainmenu/filemenu/FileMenu.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/mainmenu/filemenu/FileMenu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/mainmenu/filemenu/MenuButtonExit.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/mainmenu/filemenu/MenuButtonExit.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/mainmenu/filemenu/MenuButtonOpenLayout.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/mainmenu/filemenu/MenuButtonOpenLayout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/mainmenu/filemenu/MenuButtonOpenPlan.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/mainmenu/filemenu/MenuButtonOpenPlan.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/mainmenu/filemenu/MenuButtonSaveLayout.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/mainmenu/filemenu/MenuButtonSaveLayout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/mainmenu/filemenu/MenuButtonSavePlan.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/mainmenu/filemenu/MenuButtonSavePlan.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/mainmenu/viewmenu/MenuButtonDiagramOrientation.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/mainmenu/viewmenu/MenuButtonDiagramOrientation.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/mainmenu/viewmenu/MenuButtonOpenConsole.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/mainmenu/viewmenu/MenuButtonOpenConsole.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/mainmenu/viewmenu/MenuButtonSettings.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/mainmenu/viewmenu/MenuButtonSettings.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/mainmenu/viewmenu/MenuButtonToggleFullScreen.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/mainmenu/viewmenu/MenuButtonToggleFullScreen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/mainmenu/viewmenu/MenuButtonToggleTransparent.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/mainmenu/viewmenu/MenuButtonToggleTransparent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/mainmenu/viewmenu/ViewMenu.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/mainmenu/viewmenu/ViewMenu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/menuitems/MenuButtonFileHandler.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/menuitems/MenuButtonFileHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/wrappers/MenuBarWrapper.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/wrappers/MenuBarWrapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/wrappers/MenuWrapper.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/menu/wrappers/MenuWrapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/NodeMenu.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/NodeMenu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/controller/PlanElementMenuItem.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/controller/PlanElementMenuItem.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/controller/deletelement/DeletePlanElementMenuItem.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/controller/deletelement/DeletePlanElementMenuItem.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/controller/editelement/EditAPMenuItem.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/controller/editelement/EditAPMenuItem.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/controller/editelement/EditActionMenuItem.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/controller/editelement/EditActionMenuItem.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/controller/editelement/EditCompetenceElemMenuItem.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/controller/editelement/EditCompetenceElemMenuItem.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/controller/editelement/EditCompetenceMenuItem.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/controller/editelement/EditCompetenceMenuItem.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/controller/editelement/EditDriveCollectionMenuItem.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/controller/editelement/EditDriveCollectionMenuItem.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/controller/editelement/EditPlanElementMenuItem.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/controller/editelement/EditPlanElementMenuItem.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/controller/newelement/NewAPMenuItem.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/controller/newelement/NewAPMenuItem.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/controller/newelement/NewActionMenuItem.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/controller/newelement/NewActionMenuItem.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/controller/newelement/NewCompetenceElemMenuItem.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/controller/newelement/NewCompetenceElemMenuItem.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/controller/newelement/NewCompetenceMenuItem.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/controller/newelement/NewCompetenceMenuItem.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/controller/newelement/NewDriveElemMenuItem.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/controller/newelement/NewDriveElemMenuItem.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/controller/newelement/NewDriveMenuItem.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/controller/newelement/NewDriveMenuItem.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/controller/newelement/NewPlanElementMenuItem.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/controller/newelement/NewPlanElementMenuItem.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/popups/editelement/EditAction.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/popups/editelement/EditAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/popups/editelement/EditActionPattern.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/popups/editelement/EditActionPattern.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/popups/editelement/EditCompetence.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/popups/editelement/EditCompetence.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/popups/editelement/EditCompetenceElement.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/popups/editelement/EditCompetenceElement.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/popups/editelement/EditDriveCollection.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/popups/editelement/EditDriveCollection.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/popups/editelement/EditDriveElement.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/popups/editelement/EditDriveElement.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/popups/editelement/EditElementPopup.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/popups/editelement/EditElementPopup.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/popups/newelement/NewAction.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/popups/newelement/NewAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/popups/newelement/NewActionPattern.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/popups/newelement/NewActionPattern.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/popups/newelement/NewCompetence.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/popups/newelement/NewCompetence.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/popups/newelement/NewCompetenceElement.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/popups/newelement/NewCompetenceElement.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/popups/newelement/NewDrive.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/popups/newelement/NewDrive.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/popups/newelement/NewElementPopup.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/popups/newelement/NewElementPopup.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/popups/panes/ActionsPane.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/popups/panes/ActionsPane.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/popups/panes/RetriesPane.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/popups/panes/RetriesPane.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/popups/panes/SelectRTPane.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/popups/panes/SelectRTPane.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/popups/panes/SelectTimePane.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/nodemenu/popups/panes/SelectTimePane.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/trees/PlanTree.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/trees/PlanTree.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/trees/TreeItemWrapper.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/trees/TreeItemWrapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/videoplayer/MediaWrapper.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/videoplayer/MediaWrapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/videoplayer/VideoPlayerView.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/videoplayer/VideoPlayerView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/videoplayer/VideoPlayerWindow.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/videoplayer/VideoPlayerWindow.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/actionpatternsview/ActionPatternsLayout.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/actionpatternsview/ActionPatternsLayout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/actionpatternsview/ActionPatternsTree.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/actionpatternsview/ActionPatternsTree.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/actionpatternsview/ActionPatternsViewTab.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/actionpatternsview/ActionPatternsViewTab.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/competencesview/CompetenceLayout.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/competencesview/CompetenceLayout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/competencesview/CompetenceTree.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/competencesview/CompetenceTree.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/competencesview/CompetencesViewTab.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/competencesview/CompetencesViewTab.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/diagramview/DiagramTab.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/diagramview/DiagramTab.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/diagramview/DiagramViewLayout.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/diagramview/DiagramViewLayout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/diagramview/diagram/DiagramView.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/diagramview/diagram/DiagramView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/diagramview/diagram/GraphUpdater.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/diagramview/diagram/GraphUpdater.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/diagramview/diagram/GraphView.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/diagramview/diagram/GraphView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/diagramview/diagram/GraphWindow$1.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/diagramview/diagram/GraphWindow$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/diagramview/diagram/GraphWindow.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/diagramview/diagram/GraphWindow.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/diagramview/diagram/ZoomableScrollPane$1.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/diagramview/diagram/ZoomableScrollPane$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/diagramview/diagram/ZoomableScrollPane$ZoomHandler.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/diagramview/diagram/ZoomableScrollPane$ZoomHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/diagramview/diagram/ZoomableScrollPane.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/diagramview/diagram/ZoomableScrollPane.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/diagramview/diagram/controller/MouseGestures$1.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/diagramview/diagram/controller/MouseGestures$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/diagramview/diagram/controller/MouseGestures$DragContext.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/diagramview/diagram/controller/MouseGestures$DragContext.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/diagramview/diagram/controller/MouseGestures.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/diagramview/diagram/controller/MouseGestures.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/diagramview/diagram/graphviewer/GraphNodesLayer.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/diagramview/diagram/graphviewer/GraphNodesLayer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/diagramview/diagram/graphviewer/layout/PlanHorizontalLayout.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/diagramview/diagram/graphviewer/layout/PlanHorizontalLayout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/diagramview/diagram/graphviewer/layout/PlanLayout.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/diagramview/diagram/graphviewer/layout/PlanLayout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/diagramview/diagram/graphviewer/layout/PlanLayoutType.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/diagramview/diagram/graphviewer/layout/PlanLayoutType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/diagramview/diagram/graphviewer/layout/PlanVerticalLayout.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/diagramview/diagram/graphviewer/layout/PlanVerticalLayout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/diagramview/diagram/saving/GraphLayoutReader.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/diagramview/diagram/saving/GraphLayoutReader.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/diagramview/diagram/saving/GraphLayoutWriter.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/diagramview/diagram/saving/GraphLayoutWriter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/drivescollectionsview/DrivesCollectionLayout.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/drivescollectionsview/DrivesCollectionLayout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/drivescollectionsview/DrivesCollectionsTree.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/drivescollectionsview/DrivesCollectionsTree.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/drivescollectionsview/DrivesCollectionsViewTab.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/drivescollectionsview/DrivesCollectionsViewTab.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/editorlayout/IEditorLayout.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/editorlayout/IEditorLayout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/logicalview/LogicalViewLayout.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/logicalview/LogicalViewLayout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/logicalview/LogicalViewTree.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/gui/views/logicalview/LogicalViewTree.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/util/IReader.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/util/IReader.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/util/IWriter.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/util/IWriter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/util/panes/MultipleListsView.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/util/panes/MultipleListsView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/util/panes/SensesTableView.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/util/panes/SensesTableView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/util/panes/TableViewPanel.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/util/panes/TableViewPanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/util/panes/TableViewWrapper.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/util/panes/TableViewWrapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/util/wrappers/BooleanComboBox.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/util/wrappers/BooleanComboBox.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/util/wrappers/BorderPaneWrapper.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/util/wrappers/BorderPaneWrapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/util/wrappers/FlowPaneWrapper.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/util/wrappers/FlowPaneWrapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/util/wrappers/HBoxWrapper.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/util/wrappers/HBoxWrapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/util/wrappers/ListViewItemWrapper.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/util/wrappers/ListViewItemWrapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/util/wrappers/ListViewWrapper.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/util/wrappers/ListViewWrapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/util/wrappers/TabPaneWrapper.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/util/wrappers/TabPaneWrapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/util/wrappers/VBoxWrapper.class" afterPath="$PROJECT_DIR$/out/production/ABOD3/com/recklesscoding/abode/util/wrappers/VBoxWrapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ABOD3.iml" afterPath="$PROJECT_DIR$/ABOD3.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/recklesscoding/abode/core/plan/planelements/drives/DriveCollection.java" afterPath="$PROJECT_DIR$/src/com/recklesscoding/abode/core/plan/planelements/drives/DriveCollection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/recklesscoding/abode/core/plan/reader/xposh/XPOSHPlanReader.java" afterPath="$PROJECT_DIR$/src/com/recklesscoding/abode/core/plan/reader/xposh/XPOSHPlanReader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/recklesscoding/abode/core/plan/writer/XMLPOSHPlanWriter.java" afterPath="$PROJECT_DIR$/src/com/recklesscoding/abode/core/plan/writer/XMLPOSHPlanWriter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/recklesscoding/abode/gui/nodemenu/popups/editelement/EditDriveCollection.java" afterPath="$PROJECT_DIR$/src/com/recklesscoding/abode/gui/nodemenu/popups/editelement/EditDriveCollection.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ABOD3/main.css" afterPath="$PROJECT_DIR$/out/production/ABOD3/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/recklesscoding/abode/gui/layout/TabComponent.java" afterPath="$PROJECT_DIR$/src/com/recklesscoding/abode/gui/layout/TabComponent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/recklesscoding/abode/gui/views/diagramview/diagram/controller/MouseGestures.java" afterPath="$PROJECT_DIR$/src/com/recklesscoding/abode/gui/views/diagramview/diagram/controller/MouseGestures.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.css" afterPath="$PROJECT_DIR$/src/main.css" />
     </list>
     <ignored path="ABODE_EditorII.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -230,136 +45,88 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SensesTableView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/recklesscoding/abode/util/panes/SensesTableView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="32" column="45" lean-forward="false" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#1274#1275#0" expanded="false" />
-                <element signature="e#1318#1319#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EditCompetence.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/recklesscoding/abode/gui/nodemenu/popups/editelement/EditCompetence.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="18" column="41" lean-forward="false" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EditDriveCollection.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/recklesscoding/abode/gui/nodemenu/popups/editelement/EditDriveCollection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DriveCollection.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/recklesscoding/abode/core/plan/planelements/drives/DriveCollection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1566">
-              <caret line="60" column="9" lean-forward="false" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
-              <folding>
-                <element signature="e#2460#2461#0" expanded="true" />
-                <element signature="e#2494#2495#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EditElementPopup.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/recklesscoding/abode/gui/nodemenu/popups/editelement/EditElementPopup.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1044">
-              <caret line="46" column="38" lean-forward="false" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="XMLPOSHPlanWriter.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="XMLPOSHPlanWriter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/recklesscoding/abode/core/plan/writer/XMLPOSHPlanWriter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="679">
-              <caret line="283" column="5" lean-forward="true" selection-start-line="283" selection-start-column="5" selection-end-line="283" selection-end-column="5" />
-              <folding>
-                <element signature="e#1504#1505#0" expanded="true" />
-                <element signature="e#1538#1539#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="XPOSHPlanReader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/recklesscoding/abode/core/plan/reader/xposh/XPOSHPlanReader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="179" column="77" lean-forward="true" selection-start-line="179" selection-start-column="77" selection-end-line="179" selection-end-column="77" />
+            <state relative-caret-position="1746">
+              <caret line="283" column="5" lean-forward="false" selection-start-line="283" selection-start-column="5" selection-end-line="283" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Editor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/recklesscoding/abode/core/Editor.java">
+      <file leaf-file-name="DiagramTab.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/recklesscoding/abode/gui/views/diagramview/DiagramTab.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1682">
-              <caret line="71" column="22" lean-forward="false" selection-start-line="71" selection-start-column="22" selection-end-line="71" selection-end-column="22" />
+            <state relative-caret-position="319">
+              <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TabComponent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/recklesscoding/abode/gui/layout/TabComponent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
               <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#1862#1863#0" expanded="false" />
-                <element signature="e#1930#1931#0" expanded="false" />
-                <element signature="e#2571#2572#0" expanded="false" />
-                <element signature="e#2609#2610#0" expanded="false" />
-                <element signature="e#2749#2750#0" expanded="false" />
-                <element signature="e#2784#2785#0" expanded="false" />
-                <element signature="e#2830#2831#0" expanded="false" />
-                <element signature="e#2870#2871#0" expanded="false" />
-                <element signature="e#2914#2915#0" expanded="false" />
-                <element signature="e#2952#2953#0" expanded="false" />
-                <element signature="e#2994#2995#0" expanded="false" />
-                <element signature="e#3025#3026#0" expanded="false" />
+                <element signature="e#1218#1219#0" expanded="true" />
+                <element signature="e#1252#1253#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MenuButtonSavePlan.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/recklesscoding/abode/gui/menu/mainmenu/filemenu/MenuButtonSavePlan.java">
+      <file leaf-file-name="TabPaneWrapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/recklesscoding/abode/util/wrappers/TabPaneWrapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="25" column="56" lean-forward="false" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
+            <state relative-caret-position="377">
+              <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
               <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#500#501#0" expanded="false" />
-                <element signature="e#561#562#0" expanded="false" />
+                <element signature="e#349#350#0" expanded="true" />
+                <element signature="e#384#385#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MenuButtonOpenPlan.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/recklesscoding/abode/gui/menu/mainmenu/filemenu/MenuButtonOpenPlan.java">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#455#456#0" expanded="false" />
-                <element signature="e#516#517#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="179">
+              <caret line="52" column="1" lean-forward="true" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EditAPMenuItem.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/recklesscoding/abode/gui/nodemenu/controller/editelement/EditAPMenuItem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NodeMenu.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/recklesscoding/abode/gui/nodemenu/NodeMenu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="25" column="16" lean-forward="false" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MouseGestures.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/recklesscoding/abode/gui/views/diagramview/diagram/controller/MouseGestures.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="54" column="11" lean-forward="false" selection-start-line="54" selection-start-column="11" selection-end-line="71" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -378,15 +145,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>action</find>
-      <find>Bro</find>
-      <find>DRIVE</find>
-      <find>EditCompetenceElemMenuItem</find>
-      <find>E</find>
-      <find>EditCo</find>
-      <find>EditCom</find>
-      <find>EditCompete</find>
-      <find>EditCompetenc</find>
       <find>EditCompetence</find>
       <find>saveActions</find>
       <find>newFullName</find>
@@ -408,6 +166,15 @@
       <find>comperat</find>
       <find>Condition</find>
       <find>Sense</find>
+      <find>D</find>
+      <find>Diagram</find>
+      <find>Diagram</find>
+      <find>Diagram R</find>
+      <find>Diagram Re</find>
+      <find>Diagram Rep</find>
+      <find>tabs</find>
+      <find>getNewMainMenuBar</find>
+      <find>hasRightButtonClicked</find>
     </findStrings>
     <replaceStrings>
       <replace>Action</replace>
@@ -434,9 +201,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/recklesscoding/abode/debugger/realtime/xposh/ThreadedServer.java" />
-        <option value="$PROJECT_DIR$/src/com/recklesscoding/abode/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/recklesscoding/abode/debugger/realtime/instinct/ServerConsoleReader.java" />
         <option value="$PROJECT_DIR$/src/com/recklesscoding/abode/debugger/realtime/instinct/XPOSHUnityServer.java" />
         <option value="$PROJECT_DIR$/src/com/recklesscoding/abode/debugger/realtime/instinct/InstinctServer.java" />
         <option value="$PROJECT_DIR$/src/com/recklesscoding/abode/debugger/realtime/xposh/XPOSHUnityServer.java" />
@@ -463,14 +227,12 @@
         <option value="$PROJECT_DIR$/src/com/recklesscoding/abode/gui/nodemenu/controller/editelement/EditDriveElemMenuItem.java" />
         <option value="$PROJECT_DIR$/testdata/basicplan.xml" />
         <option value="$PROJECT_DIR$/src/com/recklesscoding/abode/gui/nodemenu/NodeMenu.java" />
-        <option value="$PROJECT_DIR$/src/com/recklesscoding/abode/gui/views/diagramview/diagram/controller/MouseGestures.java" />
         <option value="$PROJECT_DIR$/src/com/recklesscoding/abode/gui/nodemenu/popups/editelement/EditDriveElement.java" />
         <option value="$PROJECT_DIR$/src/com/recklesscoding/abode/gui/nodemenu/controller/newelement/NewDriveElemMenuItem.java" />
         <option value="$PROJECT_DIR$/src/com/recklesscoding/abode/gui/nodemenu/popups/newelement/NewDriveElement.java" />
         <option value="$PROJECT_DIR$/src/com/recklesscoding/abode/gui/nodemenu/popups/newelement/NewDrive.java" />
         <option value="$PROJECT_DIR$/src/com/recklesscoding/abode/util/panes/TableViewWrapper.java" />
         <option value="$PROJECT_DIR$/src/com/recklesscoding/abode/debugger/realtime/instinct/ThreadedServer.java" />
-        <option value="$PROJECT_DIR$/src/main.css" />
         <option value="$PROJECT_DIR$/src/com/recklesscoding/abode/util/panes/TableViewPanel.java" />
         <option value="$PROJECT_DIR$/src/com/recklesscoding/abode/util/panes/EditingCell.java" />
         <option value="$PROJECT_DIR$/src/com/recklesscoding/abode/util/panes/EditCell.java" />
@@ -485,6 +247,11 @@
         <option value="$PROJECT_DIR$/src/com/recklesscoding/abode/gui/nodemenu/popups/editelement/EditDriveCollection.java" />
         <option value="$PROJECT_DIR$/src/com/recklesscoding/abode/core/plan/reader/xposh/XPOSHPlanReader.java" />
         <option value="$PROJECT_DIR$/src/com/recklesscoding/abode/core/plan/writer/XMLPOSHPlanWriter.java" />
+        <option value="$PROJECT_DIR$/src/com/recklesscoding/abode/gui/EditorLayout.java" />
+        <option value="$PROJECT_DIR$/src/com/recklesscoding/abode/gui/layout/TabComponent.java" />
+        <option value="$PROJECT_DIR$/src/com/recklesscoding/abode/util/wrappers/TabPaneWrapper.java" />
+        <option value="$PROJECT_DIR$/src/main.css" />
+        <option value="$PROJECT_DIR$/src/com/recklesscoding/abode/gui/views/diagramview/diagram/controller/MouseGestures.java" />
       </list>
     </option>
   </component>
@@ -540,6 +307,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -727,15 +496,13 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Android Logcat" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/META-INF" />
@@ -1386,7 +1153,13 @@
       <workItem from="1521233954421" duration="7872000" />
       <workItem from="1521556070757" duration="537000" />
       <workItem from="1521556858687" duration="811000" />
-      <workItem from="1521719898975" duration="2080000" />
+      <workItem from="1521719898975" duration="2108000" />
+      <workItem from="1521802168449" duration="600000" />
+      <workItem from="1522513365646" duration="601000" />
+      <workItem from="1523267867799" duration="135000" />
+      <workItem from="1523369016657" duration="505000" />
+      <workItem from="1523963278806" duration="1398000" />
+      <workItem from="1524476392067" duration="4310000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit with basic GUI viewing">
       <created>1453217314145</created>
@@ -1710,11 +1483,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508462159127</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Fixed POSH Unity XML compliance + Drives issue.">
+      <created>1521722567161</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1521722567161</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1050130000" />
+    <option name="totallyTimeSpent" value="1057707000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="-12" width="3864" height="2114" extended-state="6" />
@@ -1729,17 +1509,18 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27279812" sideWeight="0.5809776" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979977" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14263445" sideWeight="0.48969376" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27789587" sideWeight="0.41902238" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27789587" sideWeight="0.41902238" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969603" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2036151" sideWeight="0.49744338" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21610846" sideWeight="0.49744338" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32252923" sideWeight="0.4567138" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15603402" sideWeight="0.5025566" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25611052" sideWeight="0.47585395" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25611052" sideWeight="0.47585395" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1749,7 +1530,6 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22759159" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40104774" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32302937" sideWeight="0.4567138" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1837,69 +1617,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/recklesscoding/abode/gui/nodemenu/controller/editelement/EditCompetenceMenuItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="24" column="57" lean-forward="false" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/recklesscoding/abode/gui/nodemenu/controller/newelement/NewDriveMenuItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/recklesscoding/abode/gui/nodemenu/NodeMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1769">
-          <caret line="76" column="39" lean-forward="false" selection-start-line="76" selection-start-column="39" selection-end-line="76" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/recklesscoding/abode/gui/nodemenu/controller/editelement/EditDriveElemMenuItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="23" column="56" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/recklesscoding/abode/gui/views/diagramview/diagram/controller/MouseGestures.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1566">
-          <caret line="64" column="101" lean-forward="false" selection-start-line="64" selection-start-column="101" selection-end-line="64" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/recklesscoding/abode/gui/nodemenu/controller/newelement/NewCompetenceElemMenuItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/recklesscoding/abode/gui/nodemenu/controller/newelement/NewDriveElemMenuItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="24" column="101" lean-forward="false" selection-start-line="24" selection-start-column="101" selection-end-line="24" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/recklesscoding/abode/gui/nodemenu/popups/newelement/NewDriveElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="59" column="4" lean-forward="false" selection-start-line="59" selection-start-column="4" selection-end-line="70" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/recklesscoding/abode/gui/nodemenu/popups/newelement/NewDrive.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/recklesscoding/abode/core/plan/planelements/PlanElement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1926,13 +1643,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="51" column="34" lean-forward="true" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -2030,9 +1740,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="580">
           <caret line="21" column="40" lean-forward="false" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2055,11 +1762,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="32" column="45" lean-forward="false" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1274#1275#0" expanded="false" />
-            <element signature="e#1318#1319#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2067,7 +1770,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1044">
           <caret line="46" column="38" lean-forward="false" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1861#1862#0" expanded="false" />
+            <element signature="e#1903#1904#0" expanded="false" />
+            <element signature="e#2075#2076#0" expanded="false" />
+            <element signature="e#2109#2110#0" expanded="false" />
+            <element signature="e#2309#2310#0" expanded="false" />
+            <element signature="e#2355#2356#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2135,9 +1846,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
           <caret line="18" column="41" lean-forward="false" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2155,27 +1864,118 @@
     <entry file="file://$PROJECT_DIR$/src/com/recklesscoding/abode/gui/nodemenu/popups/editelement/EditDriveCollection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
-          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-          <folding />
+          <caret line="14" column="6" lean-forward="false" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2189#2190#0" expanded="false" />
+            <element signature="e#2247#2248#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/recklesscoding/abode/core/plan/reader/xposh/XPOSHPlanReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="179" column="77" lean-forward="true" selection-start-line="179" selection-start-column="77" selection-end-line="179" selection-end-column="77" />
-          <folding />
+        <state relative-caret-position="4582">
+          <caret line="179" column="77" lean-forward="false" selection-start-line="179" selection-start-column="77" selection-end-line="179" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1201#1202#0" expanded="false" />
+            <element signature="e#1240#1241#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/recklesscoding/abode/core/plan/writer/XMLPOSHPlanWriter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="679">
-          <caret line="283" column="5" lean-forward="true" selection-start-line="283" selection-start-column="5" selection-end-line="283" selection-end-column="5" />
+        <state relative-caret-position="1746">
+          <caret line="283" column="5" lean-forward="false" selection-start-line="283" selection-start-column="5" selection-end-line="283" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/recklesscoding/abode/gui/views/diagramview/DiagramTab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/recklesscoding/abode/gui/layout/TabComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
           <folding>
-            <element signature="e#1504#1505#0" expanded="true" />
-            <element signature="e#1538#1539#0" expanded="true" />
+            <element signature="e#1218#1219#0" expanded="true" />
+            <element signature="e#1252#1253#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/javafx-src.zip!/javafx/scene/control/TabPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="114" column="51" lean-forward="false" selection-start-line="114" selection-start-column="47" selection-end-line="114" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/recklesscoding/abode/util/wrappers/TabPaneWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <folding>
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/recklesscoding/abode/gui/nodemenu/controller/editelement/EditAPMenuItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/recklesscoding/abode/gui/nodemenu/NodeMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="25" column="16" lean-forward="false" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/recklesscoding/abode/gui/EditorLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="26" column="19" lean-forward="true" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/recklesscoding/abode/gui/nodemenu/popups/editelement/EditActionPattern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1218">
+          <caret line="53" column="36" lean-forward="false" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="52" column="1" lean-forward="true" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/recklesscoding/abode/gui/views/diagramview/diagram/controller/MouseGestures.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="54" column="11" lean-forward="false" selection-start-line="54" selection-start-column="11" selection-end-line="71" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>

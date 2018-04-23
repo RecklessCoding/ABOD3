@@ -30,20 +30,12 @@ public class TabComponent extends TabPaneWrapper {
         diagramTab = new DiagramTab(primaryStage);
         init();
 
-        getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>() {
-            @Override
-            public void changed(ObservableValue<? extends Number> ov, Number oldValue, Number newValue) {
-                getTab((Integer) newValue).refresh(primaryStage);
-            }
-        });
+        getSelectionModel().selectedIndexProperty().addListener((ov, oldValue, newValue) ->
+                getTab((Integer) newValue).refresh(primaryStage));
     }
 
     private void init() {
         addTab(diagramTab);
-        addTab(new ActionPatternsViewTab(primaryStage));
-        addTab(new CompetencesViewTab(primaryStage));
-        addTab(new DrivesCollectionsViewTab(primaryStage));
-        addTab(new LogicalViewTab(primaryStage));
     }
 
     private void addTab(EditorViewTab tab) {
@@ -53,9 +45,5 @@ public class TabComponent extends TabPaneWrapper {
 
     public DiagramTab getDiagramTab() {
         return diagramTab;
-    }
-
-    public List<EditorViewTab> getTabsList() {
-        return tabsList;
     }
 }
