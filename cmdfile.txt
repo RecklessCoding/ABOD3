@@ -4,7 +4,7 @@
 TIME
 // Ask the robot to show us its plan ID
 PLAN I R
-@ DiaPlan3.inst
+@ testdata/DiaPlan3.inst
 // Turn off the local serial reporting as we will log output
 // also turn on sensor reporting
 REPORT 0 1 1 1
