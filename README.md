@@ -16,7 +16,7 @@ Alexandros Rotsidi, an EngD student at the University of Bath, is working toward
 We are always happy to accept contributions and feedback by third party users! Get in touch via [Twitter](@recklesscoding) or GitHub, if interested.
 
 # How can I cite ABOD3?
-Theodorou, A. (2017). ABOD3: A Graphical Visualization and Real-Time Debugging Tool for BOD Agent, EUCog 16, Decemeber 2016, Vienna (Accepted)
+Theodorou, A. (2017). ABOD3: A Graphical Visualization and Real-Time Debugging Tool for BOD Agent, CEUR Workshop Proceedings, 1855
 
 Theodorou, A., Wortham R.H. and Bryson J.J., (2017). Designing and implementing transparency for real time inspection of autonomous robots, Connection Science: Special Issue in the Principles of Robotics
 
