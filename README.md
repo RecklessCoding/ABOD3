@@ -31,5 +31,5 @@ Wortham, R.H., Theodorou, A. and Bryson J.J. (2017), Robot Transparency: Improvi
 
 Wortham, R.H., Theodorou, A. and Bryson J.J., (2016), What Does the Robot Think? Transparency as a Fundamental Design Requirement for Intelligent Systems}, IJCAI 2016 Ethics for Artificial Intelligence Workshop, New York, US
 
-
-
+# ABOD3 in teaching
+Joanna Bryson's [Intelligent Cognitive Control Systems] (http://www.cs.bath.ac.uk/~jjb/here/CM50230/ai-course-sched.html) module.
